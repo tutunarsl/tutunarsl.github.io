@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robotics | Chenhao Li</title>
+    <link>https://tutunarsl.github.io/tag/robotics/</link>
+      <atom:link href="https://tutunarsl.github.io/tag/robotics/index.xml" rel="self" type="application/rss+xml" />
+    <description>Robotics</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 15 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://tutunarsl.github.io/media/icon_hufdc779f4ff2ddce7bfa0f8235053833b_13200_512x512_fill_lanczos_center_3.png</url>
+      <title>Robotics</title>
+      <link>https://tutunarsl.github.io/tag/robotics/</link>
+    </image>
+    
+    <item>
+      <title>Versatile Skill Control via Self-supervised Adversarial Imitation of Unlabeled Mixed Motions</title>
+      <link>https://tutunarsl.github.io/project/mpi-cassi/</link>
+      <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/mpi-cassi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning Agile Skills via Adversarial Imitation of Rough Partial Demonstrations</title>
+      <link>https://tutunarsl.github.io/project/mpi-wasabi/</link>
+      <pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/mpi-wasabi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Object Manipulation via Hierarchical Reinforcement Learning Control</title>
+      <link>https://tutunarsl.github.io/project/eth-sp-alma/</link>
+      <pubDate>Sat, 30 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-sp-alma/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;Reinforcement learning offers a promising methodology for developing robust robotic skills but typically results in independent control of specific behaviors. The common method is to urge robots to learn a target skill in an elaborately designed training setting. To further improve legged maneuverability, it is reasonable to combine such individual learned skills to attain novel and complex movements. Building on the previous success in legged locomotion with deep reinforcement learning techniques, we develop a hierarchical control method that separates high-level planning from low-level task fulfillments. We demonstrate the effectiveness of our method with a mobile manipulation setting, where the robot is asked to push a box to an given location. The learned policy specifies end-effector position targets relative to the robot base frame while driving the base towards the target object.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Autonomous Pose Tracking with Compositional Reinforcement Learning Policies</title>
+      <link>https://tutunarsl.github.io/project/eth-sp/</link>
+      <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-sp/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;Reinforcement learning offers a promising methodology for developing robust robotic skills but typically results in independent control of specific behaviors. The common method is to urge robots to learn a target skill in an elaborately designed training setting. To further improve legged maneuverability, it is reasonable to combine such individual learned skills to attain novel and complex movements. Building on the previous success in legged locomotion with deep reinforcement learning techniques, we introduce a compositional control structure that learns pose tracking skills using state and target frame descriptions as input, locomotion, and tilting commands and weights as output actions. We also prove the generality of this structure by showing trivial adaptations when migrated to a perceptive controller. Additional elements of our solution that contribute towards integrated behaviors include the elaborated reward design process and the use of a handcrafted controller as a baseline to reveal novel locomotion patterns. Results are demonstrated both in simulation and on a real legged platform based on the operation modes we develop.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hierarchical Deep Reinforcement Learning for Legged Robot Navigation</title>
+      <link>https://tutunarsl.github.io/project/eth-forl/</link>
+      <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-forl/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;High-level tasks such as pose tracking for legged systems are important yet challenging topics in mobile navigation. In scenarios where only high-level objectives are specified, obtained skills can be directly used as independent low-level components that break away from the high-level controller design. In this work, the effectiveness of an RL-based controller is proved with a proposed hierarchical control structure for a quadrupedal system where a high-level target-commanded policy learns to utilize existing low-level locomotion skills to continuously navigate the robot to track given pose trajectories on open and flat terrain. Experiments on a locomotion alignment task on &lt;a href=&#34;https://www.anybotics.com/anymal-autonomous-legged-robot/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ANYmal&lt;/a&gt; show that the functionality of the proposed RL-based controller is able to yield comparable tracking behaviors as a fine-tuned PD controller while providing additional safety guarantees and naturalness.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>State Estimation with Particle Filter for Mobile Robot Pose Tracking</title>
+      <link>https://tutunarsl.github.io/project/eth-re-2/</link>
+      <pubDate>Sat, 31 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-re-2/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;The objective of the project is to track the state of a mobile robot, which moves in a closed room with a partially known contour. A distance sensor is mounted on the robot, pointing in the same direction as the robot is heading. This sensor measures the distance between the robot and the first opposing wall straight in front of the robot. The robot is controlled with a known input, which prevents the robot from driving into any wall. In this project, a Particle Filter is employed to estimate the location and heading of the robot, as well as the offset of an uncertain wall from its nominal position given the nonlinear dynamics and noisy observations.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Wheeled Platform Integration for Search and Rescue Applications</title>
+      <link>https://tutunarsl.github.io/project/eth-rss/</link>
+      <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-rss/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;In this project, algorithms including state estimation, mapping, localization, path planning, and artifact detection are implemented on &lt;a href=&#34;https://unlimited.ethz.ch/display/ROBOTX/SuperMegaBot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SuperMegaBot&lt;/a&gt; for an autonomous search and rescue setting. The task includes autonomous traversal of a dedicated test site, in which unknown artifacts are placed randomly and to be tracked. The robot needs to navigate through the test environment, construct a 3D map, and identify and localize the artifacts with a report of the global coordinates in a ROS bag.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Boids Behavior Control</title>
+      <link>https://tutunarsl.github.io/project/eth-cmm-3/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-cmm-3/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;As with most artificial life simulations, Boids is an example of emergent behavior. The complexity of Boids arises from the interaction of individual agents adhering to a set of simple rules. In this project, the rules applied in the simplest Boids world including free fall, separation, alignment, cohesion, leading, circular, collision avoidance, collaboration and adversary are implemented.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Inverse Kinematics Locomotion Control for a Legged Robot</title>
+      <link>https://tutunarsl.github.io/project/eth-cmm-2/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-cmm-2/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;An inverse kinematics problem of legged systems is described as determining the generalized coordinate vector given the desired end effector target position. An inverse kinematics problem can be formulated as an optimization problem. In this project, the gradient-descent method, Newton&amp;rsquo;s method, and the Gauss-Newton method are used to solve the optimization problem, with a derivation of the Jacobian matrix of the feet point dynamics. A trajectory planning method is implemented to track a target base trajectory on both flat and bumpy terrain.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Locomotion, Perception, Localization and Path Planning for an Autonomous Mobile Robot</title>
+      <link>https://tutunarsl.github.io/project/eth-amr/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-amr/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;The objective of the project is to walk through the necessary algorithmic components of developing a wheeled mobile robot. For locomotion, a closed-loop motion controller is implemented to regulate wheel velocities. For perception, linear fitting and extraction from laser scans using the split-and-merge approach are used for landmark-based localization against a known map in a line-based Extended Kalman Filter framework. In addition, Simultaneous Localization And Mapping (SLAM) is implemented for autonomous map building while exploring the environment. Finally, motion planning algorithms are applied including Dijkstra’s algorithm for computing a navigation function based on a static map of the environment, and the Dynamic Window Approach (DWA) for online planning, taking into account both static and dynamic obstacles.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Trajectory Optimization of a Spaceship with Direct Single Shooting and Direct Transcription</title>
+      <link>https://tutunarsl.github.io/project/eth-cmm-6/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-cmm-6/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;In this project, trajectory optimization methods are compared in a target-reaching task, where direct shooting optimizes over the control only whereas direct transcription enforces physics as a constraint and simultaneously optimizes over the control and the state. Finally, an orbit tracking problem is solved within a limited time of actuation by employing model predictive control and solving the optimization problem with longer horizons.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nonlinear Quadrotor Full Position Control</title>
+      <link>https://tutunarsl.github.io/project/eth-atic/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-atic/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;The objective of the project is to explore the nonlinear full position control of quadrotor systems and investigate the applicability of dynamics linearization. Quadrotors are under-actuated systems where not all states are independently controllable. When developing the control algorithms, it is generally assumed that the system operates at low speeds. In this setting, only the dominating aerodynamic forces are considered and linearization around small attitude angles (roll and pitch) is employed such that linear inputs are decoupled. In this project, control strategy with the nonlinear system dynamics is investigated to explore state space where linearized control is not applicable.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Solving Bellman Equations in a Stochastic Shortest Path Problem of Package Delivery</title>
+      <link>https://tutunarsl.github.io/project/eth-dpoc/</link>
+      <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-dpoc/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;The objective of the project is to deliver a package with a drone as quickly as possible. To achieve this, the drone must first fly to a pick-up station to collect a package and then reach a delivery station to discharge it. Along the way, the drone must avoid hazards such as trees or angry residents who try to shoot it down. In this project, the optimal policy minimizing the expected number of time steps required to successfully deliver a package is obtained by using value iteration, policy iteration and linear programming algorithms in a discrete infinite horizon setting.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Analysis, Design and Implementation of a Bio-inspired Passive Tail for Amphibious Robots</title>
+      <link>https://tutunarsl.github.io/project/epfl/</link>
+      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/epfl/</guid>
+      <description>&lt;h1 id=&#34;description&#34;&gt;Description&lt;/h1&gt;
+&lt;p&gt;The objective of the project is to develop an appropriate chordwise stiffness distribution along a bio-inspired tail for amphibious robot systems which maximizes the propulsion generated under a combined movement of both passive heaving and pitching. In addition, a passive part of the tail test setup is built on the basis of a previous work of a pool flow system for ease of further tests and replications of aquatic locomotion in biorobotic applications.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

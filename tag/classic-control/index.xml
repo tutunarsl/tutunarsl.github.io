@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Classic Control | Chenhao Li</title>
+    <link>https://tutunarsl.github.io/tag/classic-control/</link>
+      <atom:link href="https://tutunarsl.github.io/tag/classic-control/index.xml" rel="self" type="application/rss+xml" />
+    <description>Classic Control</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 31 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://tutunarsl.github.io/media/icon_hufdc779f4ff2ddce7bfa0f8235053833b_13200_512x512_fill_lanczos_center_3.png</url>
+      <title>Classic Control</title>
+      <link>https://tutunarsl.github.io/tag/classic-control/</link>
+    </image>
+    
+    <item>
+      <title>State Estimation with Hybrid Extended Kalman Filter for Boat Pose Tracking</title>
+      <link>https://tutunarsl.github.io/project/eth-re-1/</link>
+      <pubDate>Sat, 31 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-re-1/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;The objective of the project is to estimate the full state of a boat crossing a windy lake. The control inputs to the boat are the thrust command and the rudder command. The boat produces thrust in the longitudinal direction and is affected by hydrodynamic and aerodynamic drag. As a result, the state evolution of the boat is governed by a nonlinear continuous-time system dynamics. The boat receives position and orientation measurements from external stations affected by Gaussian noise corruption. In this project, a Hybrid Extended Kalman Filter is employed to estimate the full state of the boat given the nonlinear dynamics and noisy observations.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>State Estimation with Particle Filter for Mobile Robot Pose Tracking</title>
+      <link>https://tutunarsl.github.io/project/eth-re-2/</link>
+      <pubDate>Sat, 31 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-re-2/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;The objective of the project is to track the state of a mobile robot, which moves in a closed room with a partially known contour. A distance sensor is mounted on the robot, pointing in the same direction as the robot is heading. This sensor measures the distance between the robot and the first opposing wall straight in front of the robot. The robot is controlled with a known input, which prevents the robot from driving into any wall. In this project, a Particle Filter is employed to estimate the location and heading of the robot, as well as the offset of an uncertain wall from its nominal position given the nonlinear dynamics and noisy observations.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Wheeled Platform Integration for Search and Rescue Applications</title>
+      <link>https://tutunarsl.github.io/project/eth-rss/</link>
+      <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-rss/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;In this project, algorithms including state estimation, mapping, localization, path planning, and artifact detection are implemented on &lt;a href=&#34;https://unlimited.ethz.ch/display/ROBOTX/SuperMegaBot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SuperMegaBot&lt;/a&gt; for an autonomous search and rescue setting. The task includes autonomous traversal of a dedicated test site, in which unknown artifacts are placed randomly and to be tracked. The robot needs to navigate through the test environment, construct a 3D map, and identify and localize the artifacts with a report of the global coordinates in a ROS bag.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Boids Behavior Control</title>
+      <link>https://tutunarsl.github.io/project/eth-cmm-3/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-cmm-3/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;As with most artificial life simulations, Boids is an example of emergent behavior. The complexity of Boids arises from the interaction of individual agents adhering to a set of simple rules. In this project, the rules applied in the simplest Boids world including free fall, separation, alignment, cohesion, leading, circular, collision avoidance, collaboration and adversary are implemented.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Constrained Rigid Body Simulation and Impulse-based Collision Modeling</title>
+      <link>https://tutunarsl.github.io/project/eth-cmm-5/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-cmm-5/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;In this project, the dynamics of a cube projectile are simulated using the equations of motion for rigid bodies. The explicit Euler method is used to perform numerical integration in the discretized system dynamics, where the growth of simulation rate (or the decrease of time step) results in a more precise approximation to the continuous setting. However, the total energy of the system increases when the explicit Euler method is applied, which causes an unstable simulation of spring objects. To this end, the implicit Euler method is applied. Finally, impulse-based collision simulation logic for restitutional contact is implemented to constitute the simulation of rigid bodies when touching a surface.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Inverse Kinematics Locomotion Control for a Legged Robot</title>
+      <link>https://tutunarsl.github.io/project/eth-cmm-2/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-cmm-2/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;An inverse kinematics problem of legged systems is described as determining the generalized coordinate vector given the desired end effector target position. An inverse kinematics problem can be formulated as an optimization problem. In this project, the gradient-descent method, Newton&amp;rsquo;s method, and the Gauss-Newton method are used to solve the optimization problem, with a derivation of the Jacobian matrix of the feet point dynamics. A trajectory planning method is implemented to track a target base trajectory on both flat and bumpy terrain.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Locomotion, Perception, Localization and Path Planning for an Autonomous Mobile Robot</title>
+      <link>https://tutunarsl.github.io/project/eth-amr/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-amr/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;The objective of the project is to walk through the necessary algorithmic components of developing a wheeled mobile robot. For locomotion, a closed-loop motion controller is implemented to regulate wheel velocities. For perception, linear fitting and extraction from laser scans using the split-and-merge approach are used for landmark-based localization against a known map in a line-based Extended Kalman Filter framework. In addition, Simultaneous Localization And Mapping (SLAM) is implemented for autonomous map building while exploring the environment. Finally, motion planning algorithms are applied including Dijkstra’s algorithm for computing a navigation function based on a static map of the environment, and the Dynamic Window Approach (DWA) for online planning, taking into account both static and dynamic obstacles.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mechanical Simulation and Soft Manipulation of a Soft Bar with the Finite Element Method</title>
+      <link>https://tutunarsl.github.io/project/eth-cmm-4/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-cmm-4/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;In this project, the overall system is a simulation of a soft bar glued to handles. This includes finite elements (triangles) to model the bar itself and additional spring terms to model the interface between the bar and the handles. The displacement of the mesh elements is computed by minimizing the total energy of the static system. In addition, the mesh is controlled with two handles that define planar translations and orientations of the glued points. In this setting, the optimal control signal that brings the deformed position as close as possible to the target position is obtained using the inverse kinematics method. The energy density of a neo-Hookean triangle element is used in computing the simulation.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Trajectory Optimization of a Spaceship with Direct Single Shooting and Direct Transcription</title>
+      <link>https://tutunarsl.github.io/project/eth-cmm-6/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-cmm-6/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;In this project, trajectory optimization methods are compared in a target-reaching task, where direct shooting optimizes over the control only whereas direct transcription enforces physics as a constraint and simultaneously optimizes over the control and the state. Finally, an orbit tracking problem is solved within a limited time of actuation by employing model predictive control and solving the optimization problem with longer horizons.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nonlinear Quadrotor Full Position Control</title>
+      <link>https://tutunarsl.github.io/project/eth-atic/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-atic/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;The objective of the project is to explore the nonlinear full position control of quadrotor systems and investigate the applicability of dynamics linearization. Quadrotors are under-actuated systems where not all states are independently controllable. When developing the control algorithms, it is generally assumed that the system operates at low speeds. In this setting, only the dominating aerodynamic forces are considered and linearization around small attitude angles (roll and pitch) is employed such that linear inputs are decoupled. In this project, control strategy with the nonlinear system dynamics is investigated to explore state space where linearized control is not applicable.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Model Predictive Control for Vaccination Center Climate Regulation</title>
+      <link>https://tutunarsl.github.io/project/eth-mpc/</link>
+      <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-mpc/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;The objective of the project is to regulate the temperature of a vaccination center. The center offers two types of vaccines, each stored in a separate freezer as the required storage temperatures are different and allowed only in a certain range. The actual temperatures of the freezers are constantly affected by the environment outside. In this project, a temperature controller for a heating unit is designed to track the desired temperatures and satisfy the safety constraints at all times. A variety of MPC controllers are implemented to deal with different problem settings including unconstrained optimal control, closed-loop state and input constraint satisfaction, soft constraints, offset-free control, etc.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Solving Bellman Equations in a Stochastic Shortest Path Problem of Package Delivery</title>
+      <link>https://tutunarsl.github.io/project/eth-dpoc/</link>
+      <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-dpoc/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;The objective of the project is to deliver a package with a drone as quickly as possible. To achieve this, the drone must first fly to a pick-up station to collect a package and then reach a delivery station to discharge it. Along the way, the drone must avoid hazards such as trees or angry residents who try to shoot it down. In this project, the optimal policy minimizing the expected number of time steps required to successfully deliver a package is obtained by using value iteration, policy iteration and linear programming algorithms in a discrete infinite horizon setting.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

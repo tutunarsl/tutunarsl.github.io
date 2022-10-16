@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Others | Chenhao Li</title>
+    <link>https://tutunarsl.github.io/tag/others/</link>
+      <atom:link href="https://tutunarsl.github.io/tag/others/index.xml" rel="self" type="application/rss+xml" />
+    <description>Others</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 30 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://tutunarsl.github.io/media/icon_hufdc779f4ff2ddce7bfa0f8235053833b_13200_512x512_fill_lanczos_center_3.png</url>
+      <title>Others</title>
+      <link>https://tutunarsl.github.io/tag/others/</link>
+    </image>
+    
+    <item>
+      <title>Topological Network Properties of the European Football Loan System</title>
+      <link>https://tutunarsl.github.io/project/eth-anssn/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-anssn/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;The role each European football club plays in the loan system is analyzed by collecting and visualizing loan records in the transfer market from 2010 to 2020. Local metrics including out-degree, in-degree, closeness centrality, and betweenness centrality are used to reveal the activeness and significance of clubs that dominate the market.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

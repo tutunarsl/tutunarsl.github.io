@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Featured | Chenhao Li</title>
+    <link>https://tutunarsl.github.io/tag/featured/</link>
+      <atom:link href="https://tutunarsl.github.io/tag/featured/index.xml" rel="self" type="application/rss+xml" />
+    <description>Featured</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 15 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://tutunarsl.github.io/media/icon_hufdc779f4ff2ddce7bfa0f8235053833b_13200_512x512_fill_lanczos_center_3.png</url>
+      <title>Featured</title>
+      <link>https://tutunarsl.github.io/tag/featured/</link>
+    </image>
+    
+    <item>
+      <title>Versatile Skill Control via Self-supervised Adversarial Imitation of Unlabeled Mixed Motions</title>
+      <link>https://tutunarsl.github.io/project/mpi-cassi/</link>
+      <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/mpi-cassi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning Agile Skills via Adversarial Imitation of Rough Partial Demonstrations</title>
+      <link>https://tutunarsl.github.io/project/mpi-wasabi/</link>
+      <pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/mpi-wasabi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Object Manipulation via Hierarchical Reinforcement Learning Control</title>
+      <link>https://tutunarsl.github.io/project/eth-sp-alma/</link>
+      <pubDate>Sat, 30 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-sp-alma/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;Reinforcement learning offers a promising methodology for developing robust robotic skills but typically results in independent control of specific behaviors. The common method is to urge robots to learn a target skill in an elaborately designed training setting. To further improve legged maneuverability, it is reasonable to combine such individual learned skills to attain novel and complex movements. Building on the previous success in legged locomotion with deep reinforcement learning techniques, we develop a hierarchical control method that separates high-level planning from low-level task fulfillments. We demonstrate the effectiveness of our method with a mobile manipulation setting, where the robot is asked to push a box to an given location. The learned policy specifies end-effector position targets relative to the robot base frame while driving the base towards the target object.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Autonomous Pose Tracking with Compositional Reinforcement Learning Policies</title>
+      <link>https://tutunarsl.github.io/project/eth-sp/</link>
+      <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-sp/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;Reinforcement learning offers a promising methodology for developing robust robotic skills but typically results in independent control of specific behaviors. The common method is to urge robots to learn a target skill in an elaborately designed training setting. To further improve legged maneuverability, it is reasonable to combine such individual learned skills to attain novel and complex movements. Building on the previous success in legged locomotion with deep reinforcement learning techniques, we introduce a compositional control structure that learns pose tracking skills using state and target frame descriptions as input, locomotion, and tilting commands and weights as output actions. We also prove the generality of this structure by showing trivial adaptations when migrated to a perceptive controller. Additional elements of our solution that contribute towards integrated behaviors include the elaborated reward design process and the use of a handcrafted controller as a baseline to reveal novel locomotion patterns. Results are demonstrated both in simulation and on a real legged platform based on the operation modes we develop.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hierarchical Deep Reinforcement Learning for Legged Robot Navigation</title>
+      <link>https://tutunarsl.github.io/project/eth-forl/</link>
+      <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/eth-forl/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;High-level tasks such as pose tracking for legged systems are important yet challenging topics in mobile navigation. In scenarios where only high-level objectives are specified, obtained skills can be directly used as independent low-level components that break away from the high-level controller design. In this work, the effectiveness of an RL-based controller is proved with a proposed hierarchical control structure for a quadrupedal system where a high-level target-commanded policy learns to utilize existing low-level locomotion skills to continuously navigate the robot to track given pose trajectories on open and flat terrain. Experiments on a locomotion alignment task on &lt;a href=&#34;https://www.anybotics.com/anymal-autonomous-legged-robot/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ANYmal&lt;/a&gt; show that the functionality of the proposed RL-based controller is able to yield comparable tracking behaviors as a fine-tuned PD controller while providing additional safety guarantees and naturalness.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

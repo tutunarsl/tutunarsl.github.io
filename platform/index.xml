@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robotic Platforms | Chenhao Li</title>
+    <link>https://tutunarsl.github.io/platform/</link>
+      <atom:link href="https://tutunarsl.github.io/platform/index.xml" rel="self" type="application/rss+xml" />
+    <description>Robotic Platforms</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>https://tutunarsl.github.io/media/icon_hufdc779f4ff2ddce7bfa0f8235053833b_13200_512x512_fill_lanczos_center_3.png</url>
+      <title>Robotic Platforms</title>
+      <link>https://tutunarsl.github.io/platform/</link>
+    </image>
+    
+    <item>
+      <title>ALMA</title>
+      <link>https://tutunarsl.github.io/platform/alma/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/platform/alma/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ANYmal C</title>
+      <link>https://tutunarsl.github.io/platform/anymal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/platform/anymal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pleurobot</title>
+      <link>https://tutunarsl.github.io/platform/pleurobot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/platform/pleurobot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Solo 8</title>
+      <link>https://tutunarsl.github.io/platform/solo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/platform/solo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spot</title>
+      <link>https://tutunarsl.github.io/platform/spot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/platform/spot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SuperMegaBot</title>
+      <link>https://tutunarsl.github.io/platform/supermegabot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/platform/supermegabot/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

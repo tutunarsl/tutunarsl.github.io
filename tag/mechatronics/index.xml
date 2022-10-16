@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mechatronics | Chenhao Li</title>
+    <link>https://tutunarsl.github.io/tag/mechatronics/</link>
+      <atom:link href="https://tutunarsl.github.io/tag/mechatronics/index.xml" rel="self" type="application/rss+xml" />
+    <description>Mechatronics</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://tutunarsl.github.io/media/icon_hufdc779f4ff2ddce7bfa0f8235053833b_13200_512x512_fill_lanczos_center_3.png</url>
+      <title>Mechatronics</title>
+      <link>https://tutunarsl.github.io/tag/mechatronics/</link>
+    </image>
+    
+    <item>
+      <title>Analysis, Design and Implementation of a Bio-inspired Passive Tail for Amphibious Robots</title>
+      <link>https://tutunarsl.github.io/project/epfl/</link>
+      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/epfl/</guid>
+      <description>&lt;h1 id=&#34;description&#34;&gt;Description&lt;/h1&gt;
+&lt;p&gt;The objective of the project is to develop an appropriate chordwise stiffness distribution along a bio-inspired tail for amphibious robot systems which maximizes the propulsion generated under a combined movement of both passive heaving and pitching. In addition, a passive part of the tail test setup is built on the basis of a previous work of a pool flow system for ease of further tests and replications of aquatic locomotion in biorobotic applications.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Design and 3D Printing of Lightweight Advanced Energy Harvesters Made of Smart Materials</title>
+      <link>https://tutunarsl.github.io/project/mcgill/</link>
+      <pubDate>Sun, 30 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://tutunarsl.github.io/project/mcgill/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;Three-dimensional (3D) printing is classified as a revolutionary, manufacturing technology. As the most abundant natural polymer, cellulose and its many derivatives have been widely studied for many applications. The combination of 3D printable polymers with cellulose-based feedstocks is therefore of critical interest. This review highlights many studies on 3D printing applications of plant-derived cellulose and its derivatives. Potential materials include cellulose ethers/esters, microcrystalline cellulose, nanocellulose materials, and other products. Focus will be placed on their roles and functions in 3D printing processes and the performance of the resultant printed objects. A feasible methodology to compose wood fiber reinforced composites as the filament material is developed. The outlook for future work is also provided, to underscore critical issues and opportunities.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
