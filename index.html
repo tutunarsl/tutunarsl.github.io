@@ -1,20 +1,22 @@
-<!DOCTYPE html><html lang="en-us" >
+<!DOCTYPE html>
+<html lang="en-us">
 
 <head>
+  <!-- Core page metadata and style dependencies -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  
+
     <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
-  
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  
+
       <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather&family=Roboto+Mono&display=swap">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather&family=Roboto+Mono&display=swap" media="print" onload="this.media='all'">
 
   <meta name="author" content="Turcan Tuna" />
   <meta name="description" content="Turcan Tuna - PhD Candidate at Robotic Systems Lab, ETH Zurich." />
-  
+
   <link rel="alternate" hreflang="en-us" href="https://tutunarsl.github.io/" />
 
     <meta name="theme-color" content="#1565c0" />
@@ -24,9 +26,53 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
-  
+
   <link rel="stylesheet" href="/css/wowchemy.7a3e98956280c01a8ca4dcc686c8e7c6.css" />
 
+  <style>
+    /* Keep ANYmal C and ANYmal D card media area at the same ratio. */
+    .platform-card-reference .card-image,
+    .platform-card-match-anymal-d .card-image {
+      aspect-ratio: 3 / 2;
+      overflow: hidden;
+    }
+
+    .platform-card-reference .card-image img,
+    .platform-card-match-anymal-d .card-image img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #about.home-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    }
+
+    #updates.home-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    }
+
+    #experience.home-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    }
+
+    #platforms.home-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    }
+
+    #featured.home-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    }
+
+  </style>
+
+<!-- Analytics and outbound link tracking -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W8PNE87VQG"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -53,7 +99,7 @@
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));
   }
   gtag('js', new Date());
   gtag('config', 'G-W8PNE87VQG', {});
@@ -62,6 +108,7 @@
 </script>
 
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<!-- Icons, feed links, and social preview metadata -->
 <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Turcan Tuna" />
 <link rel="manifest" href="/manifest.webmanifest" />
 <link rel="icon" type="image/png" href="/media/small_icon.png" />
@@ -76,7 +123,7 @@
 <meta property="og:description" content="Turcan Tuna - PhD Candidate at Robotic Systems Lab, ETH Zurich." /><meta property="og:image" content="https://tutunarsl.github.io/media/icon_hufdc779f4ff2ddce7bfa0f8235053833b_13200_512x512_fill_lanczos_center_3.png" />
 <meta property="twitter:image" content="https://tutunarsl.github.io/media/icon_hufdc779f4ff2ddce7bfa0f8235053833b_13200_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
 <meta property="og:updated_time" content="2030-06-01T13:00:00&#43;00:00" />
-    
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -93,11 +140,11 @@
 <title>Turcan Tuna</title>
 </head>
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper   "  >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper">
+  <!-- Bootstraps theme and interactive behaviors -->
   <script src="/js/wowchemy-init.min.2ed908358299dd7ab553faae685c746c.js"></script>
 
-
-
+<!-- Global search overlay -->
 <aside class="search-modal" id="search">
   <div class="container">
     <section class="search-header">
@@ -122,7 +169,7 @@
   </div>
 </aside>
 
-
+<!-- Primary site navigation -->
 <div class="page-header">
   <header class="header--fixed">
     <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
@@ -155,7 +202,7 @@
               <a class="nav-link " href="/#platforms" data-target="#platforms"><span>Platforms</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="/uploads/resume.pdf"><span>Resumé(PDF)</span></a>
+              <a class="nav-link " href="/uploads/resume.pdf"><span>Resumé</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link " href="/#contact" data-target="#contact"><span>Contact</span></a>
@@ -188,6 +235,7 @@
   </header>
 </div>
 
+<!-- Main homepage content sections -->
 <div class="page-body">
   <span class="js-widget-page d-none">
   </span>
@@ -196,10 +244,9 @@
   <div class="home-section-bg  bg-image parallax" style="background-image: url(&#39;https://tutunarsl.github.io/media/anymal_banner1.jpg&#39;);filter: brightness(0.75);border: 1px solid black; background-position: top; background-size: auto 400px;"> <!--height: 500px;width: 1500px;border: 50px solid;-->
   </div>
   <div class="container">
-    <h1 class="hero-title"><br/><br/>Robust Perceptive Localization and Mapping in Challenging Environments</h1>
+    <h1 class="hero-title"><br/><br/>Robust Localization and Spatial 3D Perception in Challenging Environments</h1>
   </div>
 </section>
-
 
 <!-- About me and Biography start -->
 <section id="about" class="home-section wg-about  "  >
@@ -239,11 +286,11 @@
                 <i class="ai ai-google-scholar big-icon"></i>
               </a>
             </li>
-            <li>
+            <!-- <li>
               <a href=" " target="_blank" rel="noopener" aria-label="youtube">
                 <i class="fab fa-youtube big-icon"></i>
               </a>
-            </li>
+            </li> -->
             <li>
               <a href="https://www.linkedin.com/in/turcan-tuna-67a9ba1b8/" target="_blank" rel="noopener" aria-label="linkedin">
                 <i class="fab fa-linkedin big-icon"></i>
@@ -252,26 +299,36 @@
           </ul>
         </div>
       </div>
+
       <div class="col-12 col-lg-8">
         <h1>Biography</h1>
+        
         <div class="article-style">
-          
-          <p>Currently, I am a Ph.D. student at <a href="https://ethz.ch/en.html" target="_blank" rel="noopener">ETH Zurich</a>, <a href="https://rsl.ethz.ch/" target="_blank" rel="noopener">Robotic Systems Lab</a>. I graduated from my master&rsquo;s degree <a href="https://ethz.ch/en/studies/master/degree-programmes/engineering-sciences/robotics-systems-and-control.html" target="_blank" rel="noopener"> Robotics, Systems and Control</a> at <a href="https://ethz.ch/en.html" target="_blank" rel="noopener">ETH Zurich</a>, Switzerland. Before that, I received my bachelor&rsquo;s degree in Mechanical Engineering with first place in my cohort and I recieved my second bachelor degree in Control Engineering and Automation.</p>
-          <p>My research mainly focuses on incorporating state-of-the-art optimization and machine learning approaches into robust localization and mapping frameworks.  Specifically, I specialize in robust localization and perception in degenerate and challenging environments utilizing optimization and learning based methods. Additionally, I am highly interested in multi-modal fast volumetric mapping and efficient and consistent local and global representations.</p>
 
-          <p>For more information, please refer to my <a href="/uploads/resume.pdf" target="_blank">Curriculum Vitae</a> and <a href="/uploads/project_portfolio.pdf" target="_blank">Project Portfolio</a>.</p>
-        </div>
-        <div class="row">  
+<p>Currently, I am a Ph.D. candidate at <a href="https://ethz.ch/en.html" target="_blank" rel="noopener">ETH Zurich</a>, <a href="https://rsl.ethz.ch/" target="_blank" rel="noopener">Robotic Systems Lab</a>, where I work on robust spatial 3D perception and state estimation for robot autonomy in challenging real-world environments. 
+  My recent research spans localization, mapping, and 3D perception for mobile robots deployed in the wild.</p>
+<p>My research mainly focuses on robust localization and spatial 3D perception in perceptually degraded environments using optimization and data driven methods.
+  My solutions have been employed in real-world robotics deployments in forests, volcanic terrain, lava caves, mountain ranges and other harsh environments.
+  Specifically, I develop degeneracy-aware LiDAR registration and multi-modal state-estimation frameworks, with a strong focus on localizability, observability, and failure-aware optimization under real-world conditions. 
+  My recent publications further explore challenges in real-world robotics through advanced perption payload design and legged-robot specific dataset collections. 
+  Additionally, I am increasing the scope of my focus to efficient, incrementally updated, and context-aware spatial 3D representations, including both implicit and explicit scene representations for consistent local and global scene understanding.</p>
+
+<p>For more information, please refer to my <a href="/uploads/resume.pdf" target="_blank">Curriculum Vitae</a>.</p>
+</div>
+
+        <div class="row">
+
           <div class="col-md-5">
-            <div class="section-subheading">Interests
+            <div class="section-subheading">Research Focus
             </div>
             <ul class="ul-interests mb-0">
               <li>Robust Localization and Mapping</li>
-              <li>Self-Supervised Hybrid Machine Learning</li>
-              <li>Implicit Environment Representations</li>
-              <li>Robust Sensor Fusion</li>
+              <li>Real-time 3D Perception on Edge Compute </li>
+              <li>Spatial 3D scene Representations</li>
+              <li>Multi-modal Sensor Fusion</li>
             </ul>
           </div>
+
           <div class="col-md-7">
             <div class="section-subheading">Education</div>
             <ul class="ul-edu fa-ul mb-0">
@@ -315,10 +372,195 @@
         <h1 class="mb-0">Updates</h1>
       </div>
       <div class="col-12 col-lg-8">
-        <div style="height: 300px; overflow-y: scroll;">
+        <div style="height: 400px; overflow-y: auto;">
+
+          <!-- 2026 start -->
+          <details open>
+            <summary>
+              <strong>2026</strong>
+            </summary>
+            <div style="margin-left:6px; padding-left:20px; border-left:1px solid;">
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong><a href="https://grandtour.leggedrobotics.com/" target="_blank" rel="noopener">The GrandTour dataset journal article</a> is now under review for IJRR.</strong>
+                </summary>
+                My most recent work (equal contribution with my co-PI, <a href="https://jonasfrey96.github.io/" target="_blank" rel="noopener">Jonas Frey</a>) <em>GrandTour: A Legged Robotics Dataset in the Wild for Multi-Modal Perception and State Estimation</em> is currently under review (2026).
+              </details>
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>My journal publication <em>Informed, Constrained, Aligned was published in IEEE Transactions on Field Robotics</em> is going to be presented at ICRA 2026.</strong>
+                <a href="https://ieeexplore.ieee.org/abstract/document/11021623/?casa_token=QvW_-6eFDpcAAAAA:TYBaGRz5thYC5lmcb689jiY4gYhmELhxwLG6F7YNBXLs6TLHPtElybzN69bv986RUHngjrweSWQ" target="_blank" rel="noopener">[IEEE Xplore]</a>
+                </summary>
+                <em>Informed, Constrained, Aligned: A Field Analysis on Degeneracy-aware Point Cloud Registration in the Wild</em> was accepted in IEEE Transactions on Field Robotics (2025) and now going to be presented in ICRA 2026.
+              </details>
+
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>The IEEE TRO submission <em>Holistic fusion: Task-and setup-agnostic robot localization and state estimation with factor graphs</em> is now accepted!</strong>
+                 <a href="https://arxiv.org/abs/2504.06479" target="_blank" rel="noopener">[arXiv]</a>
+                </summary>
+                The work I co-authored, <em>Holistic Fusion: Task- and Setup-Agnostic Robot Localization and State Estimation with Factor Graphs</em>, has been conditionall accepted.
+              </details>
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>BIEVR-LIO, a work I have collaborated on is under review for RSS 2026.</strong>
+                </summary>
+                The work I co-authored, <em>BIEVR-LIO: Robust LiDAR-Inertial Odometry through Bump-Image-Enhanced Voxel Maps</em>, is under review for RSS 2026.
+              </details>
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>A new IEEE magazine <em>Large-Scale Autonomous Gas Monitoring for Volcanic Environments: A Legged Robot on Mount Etna</em> is now under review.</strong>
+                 <a href="https://arxiv.org/abs/2601.07362" target="_blank" rel="noopener">[arXiv]</a>
+                </summary>
+                The work I co-authored, <em>Large-Scale Autonomous Gas Monitoring for Volcanic Environments: A Legged Robot on Mount Etna</em>, is currently under review (2026).
+              </details>
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>The work of my student <em>One-Shot Badminton Shuttle Detection for Mobile Robots</em> is under review for IEEE RAP.</strong>
+                </summary>
+                A work I supervised, <em>One-Shot Badminton Shuttle Detection for Mobile Robots</em>, is currently under review for RAP (2026).
+              </details>
+
+            </div>
+          </details>
+          <!-- 2026 end -->
+
+          <!-- 2025 start -->
+          <p></p>
+          <details open>
+            <summary>
+              <strong>2025</strong>
+            </summary>
+            <div style="margin-left:6px; padding-left:20px; border-left:1px solid;">
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>My analysis work <em>Informed, Constrained, Aligned was published in IEEE Transactions on Field Robotics</em> is now published in IEEE T-FR. </strong>
+                 <a href="https://ieeexplore.ieee.org/abstract/document/11021623/?casa_token=QvW_-6eFDpcAAAAA:TYBaGRz5thYC5lmcb689jiY4gYhmELhxwLG6F7YNBXLs6TLHPtElybzN69bv986RUHngjrweSWQ" target="_blank" rel="noopener">[IEEE Xplore]</a>
+                </summary>
+                <em>Informed, Constrained, Aligned: A Field Analysis on Degeneracy-aware Point Cloud Registration in the Wild</em> was published in IEEE Transactions on Field Robotics (2025).
+              </details>
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>CaRLi-V is under review for IEEE RAP.</strong>
+                </summary>
+                A work I supervised, <em>CaRLi-V: Camera-RADAR-LiDAR Point-Wise 3D Velocity Estimation</em>, is currently under review (2025).
+               <a href="https://arxiv.org/abs/2511.01383" target="_blank" rel="noopener">[arXiv]</a>
+              </details>
+
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>ForestLPR received a CVPR 2025 Paper Highlight.</strong>
+                <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Shen_ForestLPR_LiDAR_Place_Recognition_in_Forests_Attentioning_Multiple_BEV_Density_CVPR_2025_paper.html" target="_blank" rel="noopener">[CVF OpenAccess]</a>
+                </summary>
+                The work I co-authored, <em>ForestLPR: LiDAR Place Recognition in Forests Attentioning Multiple BEV Density Images</em>, received a Paper Highlight at CVPR 2025.
+                <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Shen_ForestLPR_LiDAR_Place_Recognition_in_Forests_Attentioning_Multiple_BEV_Density_CVPR_2025_paper.html" target="_blank" rel="noopener">[CVF OpenAccess]</a>
+              </details>
+
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>The continuous-time state estimation survey was published in IEEE T-RO.</strong>
+                 <a href="https://ieeexplore.ieee.org/document/11097892" target="_blank" rel="noopener">[IEEE Xplore]</a>
+                </summary>
+                The work I co-authored, <em>Continuous-Time State Estimation Methods in Robotics: A Survey</em>, was published in IEEE Transactions on Robotics (2025).
+              </details>
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>Boxi was presented at RSS 2025.</strong>
+                <a href="https://www.roboticsproceedings.org/rss21/p134.pdf" target="_blank" rel="noopener">[PDF]</a>
+                </summary>
+                <em>Boxi: Design Decisions in the Context of Algorithmic Performance for Robotics</em> was published in Robotics: Science and Systems (RSS), 2025.
+              </details>
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>ForestLPR was published at CVPR 2025.</strong>
+                </summary>
+                The work I co-authored, <em>ForestLPR: LiDAR Place Recognition in Forests Attentioning Multiple BEV Density Images</em>, was published at CVPR 2025.
+              </details>
+
+              <p></p>
+              <details>
+                <summary>
+                    <strong>Diffusion-based robust LiDAR place recognition was published at ICRA 2025.</strong>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/11127534/?casa_token=WOSB6DTL61cAAAAA:Us0B5G1K1aRTmUBQB0fOS3pxj6xF9il9SBmssFkYf1arZNjYvmHiUD8orZq1tTkyuSiEBh7LKgU" target="_blank" rel="noopener">[IEEE Xplore]</a>
+                </summary>
+                A work I supervised, <em>Diffusion Based Robust LiDAR Place Recognition</em>, was published at ICRA 2025.
+              </details>
+
+            </div>
+          </details>
+          <!-- 2025 end -->
+
+          <!-- 2024 start -->
+          <p></p>
+          <details>
+            <summary>
+              <strong>2024</strong>
+            </summary>
+            <div style="margin-left:6px; padding-left:20px; border-left:1px solid;">
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>Sep. 2024 – Dec. 2024: Research Exchange at MIT SPARK Lab (MA, USA).</strong>
+                </summary>
+                I worked on spatial 3D mapping with Gaussian Splatting methods for a generalizable robotic mapping pipeline.
+              </details>
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>X-ICP was published in IEEE Transactions on Robotics.</strong>
+                </summary>
+                <em>X-ICP: Localizability-Aware LiDAR Registration for Robust Localization in Extreme Environments</em> was published in IEEE Transactions on Robotics (2024).
+              </details>
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>Global Path Planning for Autonomous Vehicles in Orchards and Vineyards was published at RoMoCo 2024.</strong>
+                </summary>
+                The work I co-authored was published at the 13th International Workshop on Robot Motion and Control (RoMoCo), 2024.
+              </details>
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>Autonomous Forest Inventory with Legged Robots was published.</strong>
+                </summary>
+                The work I co-authored, <em>Autonomous Forest Inventory with Legged Robots: System Design and Field Deployment</em>, was published in 2024.
+              </details>
+
+            </div>
+          </details>
+          <!-- 2024 end -->
 
           <!-- 2023 start -->
-          <details open> <!-- <details open> -->
+          <p></p>
+          <details>
             <summary>
               <strong>2023</strong>
             </summary>
@@ -327,25 +569,34 @@
               <p></p>
               <details>
                 <summary>
-                  <strong>Feb 07: X-ICP, my latest T-RO journal submission got positive review! </strong>
+                  <strong>Feb. 2023: I started my Ph.D. at ETH Zurich, Robotic Systems Lab.</strong>
                 </summary>
-                Revising my latest submission for publication for the next stage of the review process.
+                My Ph.D. research focuses on robust spatial 3D perception in geometrically degenerate environments to enable robot autonomy.
               </details>
 
               <p></p>
               <details>
                 <summary>
-                  <strong>Feb 03: Started to my Ph.D. studies in RSL. </strong>
+                  <strong>Scientific exploration of challenging planetary analog environments was published in Science Robotics.</strong>
                 </summary>
-                In my Ph.D. studies I am focusing on robust localization and mapping in degenerate environments. Particularly interested in global and local consistency of the generated environments improved and aided by hybrid learning methods.
+                The work I co-authored, <em>Scientific exploration of challenging planetary analog environments with a team of legged robots</em>, was published in <em>Science Robotics</em> (2023).
+              </details>
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>I began supervising student projects and theses at ETH Zurich.</strong>
+                </summary>
+                I started supervising master theses and semester projects at ETH Zurich (2023–Present).
               </details>
 
             </div>
           </details>
-          <!-- 2023 start -->
+          <!-- 2023 end -->
 
           <!-- 2022 start -->
-          <details> <!-- <details open> -->
+          <p></p>
+          <details>
             <summary>
               <strong>2022</strong>
             </summary>
@@ -354,22 +605,46 @@
               <p></p>
               <details>
                 <summary>
-                  <strong>May 01: Started as a Scientific Researcher at RSL.</strong>
+                  <strong>May. 2022: I completed my M.Sc. in Robotics, Systems &amp; Control at ETH Zurich.</strong>
                 </summary>
-               Right after my master MSc thesis, I started working on online mesh generation and dense mapping tool at RSL.
+                My master’s thesis focused on X-ICP, a localizability-aware LiDAR registration framework for robust localization in extreme environments.
               </details>
 
               <p></p>
               <details>
                 <summary>
-                  <strong>April 27: Successfully defended my MSc Thesis.</strong>
+                  <strong>May. 2022 – Feb. 2023: I worked as a Scientific Researcher at ETH Zurich, Robotic Systems Lab.</strong>
                 </summary>
-               I have defended my MSc Thesis successfully in the form of a presentation and Q&A session.
+                I conducted independent research on robust localization and mapping for legged robots and developed the X-ICP framework with large-scale evaluation.
               </details>
-              
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>Sep. 2022 – Jan. 2023: I was a Teaching Assistant for Robot Dynamics at ETH Zurich.</strong>
+                </summary>
+                I supported lectures and exercises, and prepared and graded assignments and exams for the Robot Dynamics course.
+              </details>
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>Deep learning frameworks for control systems was published in Applied Intelligence.</strong>
+                </summary>
+                <em>Deep learning frameworks to learn prediction and simulation focused control system models</em> was published in <em>Applied Intelligence</em> (2022).
+              </details>
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>I started teaching in the ETH Zurich Robotics Summer School.</strong>
+                </summary>
+                I began contributing as a lecturer/teaching assistant in Robotics Summer School activities at ETH Zurich (2022–Present).
+              </details>
+
             </div>
           </details>
-          <!-- 2022 start -->
+          <!-- 2022 end -->
 
           <!-- 2021 start -->
           <p></p>
@@ -378,13 +653,15 @@
               <strong>2021</strong>
             </summary>
             <div style="margin-left:6px; padding-left:20px; border-left:1px solid;">
+
               <p></p>
               <details>
                 <summary>
-                  <strong>March 01: I started my internship at ANYbotics AG.</strong>
+                  <strong>Mar. 2021 – Oct. 2021: I was a Perception Engineering Intern at ANYbotics AG.</strong>
                 </summary>
-                I started my internship at ANYbotics AG as a perception intern working on robust global localization and sensor fusion odometry systems.
+                I worked on global initialization and robust localization/mapping for ANYmal robots, including LiDAR-camera-IMU sensor fusion odometry and field experiments.
               </details>
+
             </div>
           </details>
           <!-- 2021 end -->
@@ -396,17 +673,19 @@
               <strong>2020</strong>
             </summary>
             <div style="margin-left:6px; padding-left:20px; border-left:1px solid;">
+
               <p></p>
               <details>
                 <summary>
-                  <strong>Sep 01: I started my semester project at Autonomous Systems Lab (ASL), ETH Zurich, Switzerland.</strong>
+                  <strong>FOLLY was published in Aerospace Science and Technology.</strong>
                 </summary>
-               My semester project focused on Mid-air Initialization of an Agile Drones with Filter based localization. We relied on IMU and RGB data to estimate gravity vector orientation and IMU biases to jump start filter based localization.
+                <em>Design and development of FOLLY: A self-foldable and self-deployable autonomous quadcopter</em> was published in <em>Aerospace Science and Technology</em> (2020).
               </details>
+
             </div>
           </details>
           <!-- 2020 end -->
-          
+
           <!-- 2019 start -->
           <p></p>
           <details>
@@ -414,13 +693,47 @@
               <strong>2019</strong>
             </summary>
             <div style="margin-left:6px; padding-left:20px; border-left:1px solid;">
+
               <p></p>
               <details>
                 <summary>
-                  <strong>July 27: I received my second bachelor degree on Control Engineering and Automation. Istanbul, Turkey.</strong>
+                  <strong>Sep. 2019: I started my M.Sc. in Robotics, Systems &amp; Control at ETH Zurich.</strong>
                 </summary>
-               I graduated from my second bachelor degree on Control engineering and automation.
+                I began graduate studies in Robotics, Systems &amp; Control at ETH Zurich (completed in May 2022).
               </details>
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>Sep. 2019 – Mar. 2021: I worked at ETH Zurich ASL as a Student Mechanical Designer.</strong>
+                </summary>
+                I redesigned the Super Mega Bot platform for the DARPA Subterranean Challenge, focusing on robustness, maintainability, and mechanical optimization.
+              </details>
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>Sep. 2018 – Jun. 2019: I worked as a Research Assistant at Istanbul Technical University.</strong>
+                </summary>
+                I worked on deep learning methods for non-linear system identification and time-series prediction, which later led to a journal publication.
+              </details>
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>Jun. 2019: I completed my B.Sc. in Control &amp; Automation Engineering.</strong>
+                </summary>
+                I graduated from Istanbul Technical University as the top student in the program (1st/105).
+              </details>
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>I received the Top Graduate award in Control &amp; Automation Engineering.</strong>
+                </summary>
+                I was awarded Top Graduate in Control &amp; Automation Engineering at Istanbul Technical University (1st/105).
+              </details>
+
             </div>
           </details>
           <!-- 2019 end -->
@@ -432,36 +745,91 @@
               <strong>2018</strong>
             </summary>
             <div style="margin-left:6px; padding-left:20px; border-left:1px solid;">
+
               <p></p>
               <details>
                 <summary>
-                  <strong>June 26: I was awarded my first Bachelor degree at Istanbul Technical University, Istanbul, Turkey.</strong>
+                  <strong>Jun. 2018: I completed my B.Sc. in Mechanical Engineering.</strong>
                 </summary>
-              Received my first bachelor degree in Mechanical Engineering.
+                I graduated from Istanbul Technical University as the top student in the program (1st/81).
               </details>
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>Jun. 2018 – Sep. 2018: I was a Research Intern at Imperial College London.</strong>
+                </summary>
+                I developed machine-learning pipelines using EEG, EMG, and video data to estimate human stress levels for human-robot interaction.
+              </details>
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>FOLLY was published at CEIT 2018.</strong>
+                </summary>
+                <em>FOLLY: A Self Foldable and Self Deployable Autonomous Quadcopter</em> was published at CEIT 2018.
+              </details>
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>I received the Best Paper Award at CEIT 2018.</strong>
+                </summary>
+                I received the Best Paper Award for the FOLLY paper at the Conference on Control Engineering and Information Technology (CEIT).
+              </details>
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>I received the Top Graduate award in Mechanical Engineering.</strong>
+                </summary>
+                I was awarded Top Graduate in Mechanical Engineering at Istanbul Technical University (1st/81).
+              </details>
+
             </div>
           </details>
           <!-- 2018 end -->
 
-          <!-- 2016 start -->
+          <!-- 2015 start -->
           <p></p>
           <details>
             <summary>
               <strong>2015</strong>
             </summary>
             <div style="margin-left:6px; padding-left:20px; border-left:1px solid;">
+
               <p></p>
               <details>
                 <summary>
-                  <strong>March 01: I started my second bachelor major, Control Engineering and Automotion at Istanbul Technical UNiversity..</strong>
+                  <strong>Sep. 2015: I started my B.Sc. in Control &amp; Automation Engineering.</strong>
                 </summary>
-                XX
+                I began my second bachelor’s degree at Istanbul Technical University (completed in Jun. 2019).
               </details>
+
             </div>
           </details>
-          <!-- 2016 end -->
+          <!-- 2015 end -->
 
-          
+          <!-- 2013 start -->
+          <p></p>
+          <details>
+            <summary>
+              <strong>2013</strong>
+            </summary>
+            <div style="margin-left:6px; padding-left:20px; border-left:1px solid;">
+
+              <p></p>
+              <details>
+                <summary>
+                  <strong>Sep. 2013: I started my B.Sc. in Mechanical Engineering.</strong>
+                </summary>
+                I began my undergraduate studies in Mechanical Engineering at Istanbul Technical University (completed in Jun. 2018).
+              </details>
+
+            </div>
+          </details>
+          <!-- 2013 end -->
+
         </div>
       </div>
     </div>
@@ -476,63 +844,123 @@
   <div class="container">
     <div class="row  ">
       <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-        <h1 class="mb-0">Featured Publications</h1> 
+        <h1 class="mb-0">Featured Publications</h1>
       </div>
 
       <div class="col-12 col-lg-8">
+
+      <div class="mb-4">
+        <div class="p-3 p-md-4 rounded shadow-sm" style="background: linear-gradient(135deg, #1565c0 0%, #1e88e5 100%); border: 2px solid #0d47a1;">
+          <p class="mb-1" style="color: #fff; font-weight: 700; font-size: 1.05rem;">
+            Looking for the latest work?
+          </p>
+          <p class="mb-0" style="color: #e3f2fd;">
+            My most recent publications and updates are available on my
+            <a href="/uploads/resume.pdf" target="_blank" rel="noopener" style="color: #fff; text-decoration: underline; font-weight: 700;">CV</a>
+            and
+            <a href="https://scholar.google.com/citations?user=k31q-owAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" style="color: #fff; text-decoration: underline; font-weight: 700;">Google Scholar</a>.
+          </p>
+        </div>
+      </div>
+
 
         <!-- Publication TRO start -->
         <div class="card-simple view-card">
           <div class="article-metadata">
             <div>
-              <span class="author-highlighted">
-                Turcan Tuna</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich"></i>, <span >
-                Julian Nubert</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich"></i>, <span >
-                Yoshua Nava</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="ANYbotics AG, Zurich"></i>, <span >
-                Shehryar Khattak</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich"></i>, <span >
-                Marco Hutter</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich"></i>, <span >
-                
-            <span class="article-date">
-              ,2022
-            </span>
-          </div>
-            <span class="middot-divider">
-            </span>
+              <span class="author-highlighted">Turcan Tuna</span>
+              <i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich"></i>,
+
+              <span>Julian Nubert</span>
+              <i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich"></i>,
+
+              <span>Yoshua Nava</span>
+              <i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="ANYbotics AG, Zurich"></i>,
+
+              <span>Shehryar Khattak</span>
+              <i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich"></i>,
+
+              <span>Marco Hutter</span>
+              <i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich"></i>
+
+              <span class="article-date">, 2023</span>
+            </div>
+
+            <!-- <span class="middot-divider"></span> -->
+
             <span class="pub-publication">
-              <strong style="color:rgba(33, 183, 33, 0.588);">(Under-Review)</strong> for <em>IEEE Transactions on Robotics (T-RO)</em>
+              <strong style="color: rgba(33, 183, 33, 0.588);">(Published)</strong>
+                in <a href="https://ieeexplore.ieee.org/abstract/document/10328716/" target="_blank" rel="noopener" style="color: #1565c0;"><em style="color: inherit;">IEEE Transactions on Robotics (T-RO)</em></a>
             </span>
           </div>
-          <a href="/publication/TRO/" >
+
+          <a href="/publication/TRO/">
             <div class="img-hover-zoom">
-              <img src="/publication/TRO/website_OnlyRobotOverviewFigure.png" height="340" width="511"
-                  class="article-banner" alt="X-ICP: Localizability-Aware LiDAR Registration for Robust Localization in Extreme Environments" loading="lazy">
+              <img
+                src="/publication/TRO/website_OnlyRobotOverviewFigure.png"
+                height="340"
+                width="511"
+                class="article-banner"
+                alt="X-ICP: Localizability-Aware LiDAR Registration for Robust Localization in Extreme Environments"
+                loading="lazy"
+              >
             </div>
           </a>
+
           <div class="section-subheading article-title mb-1 mt-3">
-            <a href="/publication/TRO/" >X-ICP: Localizability-Aware LiDAR Registration for Robust Localization in Extreme Environments</a>
+            <a href="/publication/TRO/">
+              X-ICP: Localizability-Aware LiDAR Registration for Robust Localization in Extreme Environments
+            </a>
           </div>
-          <a href="/publication/TRO/"  class="summary-link">
+
+          <a href="/publication/TRO/" class="summary-link">
             <div class="article-style">
-              <p> In this work we propose i) a robust multi-category (non-)localizability detection module, and ii) a localizability-aware constrained ICP optimization module and couples both in a unified manner. The proposed localizability detection is achieved by utilizing the correspondences between the scan and the map to analyze the alignment strength against the principal directions of the optimization as part of its multi-category LiDAR localizability analysis. In the second part, this localizability analysis is then tightly integrated into the scan-to-map point cloud registration to generate drift-free pose updates along well-constrained directions. </p>
+              <p>
+                In this work we propose
+                i) a robust multi-category (non-)localizability detection module, and
+                ii) a localizability-aware constrained ICP optimization module, and couple both in a unified manner.
+                The proposed localizability detection is achieved by utilizing the correspondences between the scan
+                and the map to analyze the alignment strength against the principal directions of the optimization
+                as part of its multi-category LiDAR localizability analysis.
+                In the second part, this localizability analysis is then tightly integrated into the scan-to-map
+                point cloud registration to generate drift-free pose updates along well-constrained directions.
+              </p>
             </div>
           </a>
+
           <div class="btn-links">
-            
-          <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/pdf/2211.16335.pdf" target="_blank" rel="noopener">
-            PDF
-          </a>
-          <a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/publication/TRO/cite.bib">
-            Cite
-          </a>
-          
-          <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://sites.google.com/leggedrobotics.com/x-icp">
-            Project
-          </a>
-        
-          <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.youtube.com/watch?v=f-i-br-l5QA" target="_blank" rel="noopener">
-            Video
-          </a>
-              
+            <a
+              class="btn btn-outline-primary btn-page-header btn-sm"
+              href="https://arxiv.org/pdf/2211.16335.pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              PDF
+            </a>
+
+            <a
+              href="#"
+              class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+              data-filename="/publication/TRO/cite.bib"
+            >
+              Cite
+            </a>
+
+            <a
+              class="btn btn-outline-primary btn-page-header btn-sm"
+              href="https://sites.google.com/leggedrobotics.com/x-icp"
+            >
+              Project
+            </a>
+
+            <a
+              class="btn btn-outline-primary btn-page-header btn-sm"
+              href="https://www.youtube.com/watch?v=f-i-br-l5QA"
+              target="_blank"
+              rel="noopener"
+            >
+              Video
+            </a>
           </div>
         </div>
         <!-- Publication TRO end -->
@@ -541,65 +969,67 @@
         <div class="card-simple view-card">
           <div class="article-metadata">
             <div>
-              <span class="author-highlighted">
-                Philip Arm</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich"></i>, <span >
-                Gabriel Waibel</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich"></i>, <span >
-                Jan Preisig</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich"></i>, <span >
-                Turcan Tuna</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich"></i>, <span >
-                Ruyi Zhou</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich and State Key Laboratory of Robotics and System, Harbin"></i>, <span >
-                Valentin Bickel</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Laboratory of Hydraulics, Hydrology and Glaciology, ETH Zurich"></i>, <span >
-                Gabriela Ligeza</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Department of Environmental Sciences, University of Basel"></i>, <span >
-                Takahiro Miki</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich"></i>, <span >
-                Floarian Kehl</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="nnovation Cluster Space and Aviation (UZH Space Hub), Air Force Center"></i>, <span >
-                Hendrik MiKolvenbach</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich"></i>, <span >
-                Marco Hutter</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich"></i>, <span >
-         
-            <span class="article-date">
-              ,2022
-            </span>
-          </div>
-            <span class="middot-divider">
-            </span>
+              <span>Philip Arm</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich"></i>,
+              <span>Gabriel Waibel</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich"></i>,
+              <span>Jan Preisig</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich"></i>,
+              <span>Turcan Tuna</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich"></i>,
+              <span>Ruyi Zhou</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich and State Key Laboratory of Robotics and System, Harbin"></i>,
+              <span>Valentin Bickel</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Laboratory of Hydraulics, Hydrology and Glaciology, ETH Zurich"></i>,
+              <span>Gabriela Ligeza</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Department of Environmental Sciences, University of Basel"></i>,
+              <span>Takahiro Miki</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich"></i>,
+              <span>Floarian Kehl</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="nnovation Cluster Space and Aviation (UZH Space Hub), Air Force Center"></i>,
+              <span>Hendrik MiKolvenbach</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich"></i>,
+              <span>Marco Hutter</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Robotics Systems Lab, ETH Zurich"></i>
+
+              <span class="article-date">
+                , 2023
+              </span>
+            </div>
+            <!-- <span class="middot-divider">
+            </span> -->
             <span class="pub-publication">
-              <strong style="color:rgba(33, 183, 33, 0.588);">(Under-review)</strong> in <em>Journal of Science Robotics</em>
+                <strong style="color:rgba(33, 183, 33, 0.588);">(Published)</strong>
+                in <a href="https://www.science.org/doi/abs/10.1126/scirobotics.ade9548" target="_blank" rel="noopener" style="color: #1565c0;"><em style="color: inherit;">Science Robotics</em></a>
             </span>
           </div>
           <a href="/publication/sciRo/" >
             <div class="img-hover-zoom">
               <img src="/publication/sciRo/featured.webp" style="border:2px solid black" height="340" width="511"
-                  class="article-banner" alt="Scientific Exploration of Challenging Planetary
-                  Analog Environments with a Team of Legged Robots" loading="lazy">
+                  class="article-banner" alt="Scientific Exploration of Challenging Planetary Analog Environments with a Team of Legged Robots" loading="lazy">
             </div>
           </a>
           <div class="section-subheading article-title mb-1 mt-3">
-            <a href="/publication/sciRo/" >Scientific Exploration of Challenging Planetary
-              Analog Environments with a Team of Legged Robots</a>
+            <a href="/publication/sciRo/" >Scientific Exploration of Challenging Planetary Analog Environments with a Team of Legged Robots</a>
           </div>
           <a href="/publication/sciRo/"  class="summary-link">
             <div class="article-style">
-              <p>This article presents a team of legged robots for exploration missions in challenging planetary analog environments. We equipped the robots with an efficient locomotion controller, a mapping pipeline for online and post-mission visualization, semantic and instance segmentation to highlight scientific targets,
-                and advanced payloads for remote and in-situ scientific investigation.</p>
+              <p>This article presents a team of legged robots for exploration missions in challenging planetary analog environments. We equipped the robots with an efficient locomotion controller, a mapping pipeline for online and post-mission visualization, semantic and instance segmentation to highlight scientific targets, and advanced payloads for remote and in-situ scientific investigation.</p>
             </div>
           </a>
+
           <div class="btn-links">
-            <!--
-            <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://link.springer.com/article/10.1007/s10489-021-02416-0" target="_blank" rel="noopener">
+            <a
+              class="btn btn-outline-primary btn-page-header btn-sm"
+              href="https://www.science.org/doi/abs/10.1126/scirobotics.ade9548"
+              target="_blank"
+              rel="noopener"
+            >
               PDF
             </a>
-            <a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-                    data-filename="/publication/deepLearningJournal/cite.bib">
+
+            <a
+              href="#"
+              class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+              data-filename="/publication/sciRo/cite.bib"
+            >
               Cite
             </a>
-            
-              <a class="btn btn-outline-primary btn-page-header btn-sm" href="/project//">
-                Project
-              </a>
-            -->
-            <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.youtube.com/watch?v=I9eeqFImT1A&feature=youtu.be" target="_blank" rel="noopener">
+
+            <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.youtube.com/watch?v=I9eeqFImT1A&amp;feature=youtu.be" target="_blank" rel="noopener">
               Video
             </a>
-              
           </div>
+
         </div>
         <!-- Publication SciRo end -->
 
@@ -607,14 +1037,14 @@
         <div class="card-simple view-card">
           <div class="article-metadata">
             <div>
-              <span class="author-highlighted">
-                Turcan Tuna</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>, <span >
-                Aykut Beke</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>, <span >
-                Tufan Kumbasar</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>, <span >
+              <span class="author-highlighted">Turcan Tuna</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>,
+              <span>Aykut Beke</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>,
+              <span>Tufan Kumbasar</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>
+
+              <span class="article-date">
+                May, 2021
+              </span>
             </div>
-            <span class="article-date">
-              May, 2021
-            </span>
             <span class="middot-divider">
             </span>
             <span class="pub-publication">
@@ -624,37 +1054,24 @@
           <a href="/publication/deepLearningJournal/" >
             <div class="img-hover-zoom">
               <img src="/publication/deepLearningJournal/featured.webp" style="border:2px solid black" height="340" width="511"
-                  class="article-banner" alt="Deep learning frameworks to learn prediction
-                  and simulation focused control system models" loading="lazy">
+                  class="article-banner" alt="Deep learning frameworks to learn prediction and simulation focused control system models" loading="lazy">
             </div>
           </a>
           <div class="section-subheading article-title mb-1 mt-3">
-            <a href="/publication/deepLearningJournal/" >Deep learning frameworks to learn prediction
-              and simulation focused control system models</a>
+            <a href="/publication/deepLearningJournal/" >Deep learning frameworks to learn prediction and simulation focused control system models</a>
           </div>
           <a href="/publication/deepLearningJournal/"  class="summary-link">
             <div class="article-style">
-              <p>In this work, we present Simulation and prediction focuced DNNs for non-linear system identification problem. Furthermore, we provide recommendations on how deep AEs and LSTMs should be utilized to end up with efficient Prediction-focused (Pf) and Simulation-focused
-                (Sf) DNNs for time series and system identification problems.</p>
+              <p>In this work, we present Simulation and prediction focuced DNNs for non-linear system identification problem. Furthermore, we provide recommendations on how deep AEs and LSTMs should be utilized to end up with efficient Prediction-focused (Pf) and Simulation-focused (Sf) DNNs for time series and system identification problems.</p>
             </div>
           </a>
           <div class="btn-links">
             <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://link.springer.com/article/10.1007/s10489-021-02416-0" target="_blank" rel="noopener">
               PDF
             </a>
-            <a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-                    data-filename="/publication/deepLearningJournal/cite.bib">
+            <a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/publication/deepLearningJournal/cite.bib">
               Cite
             </a>
-            <!--
-              <a class="btn btn-outline-primary btn-page-header btn-sm" href="/project//">
-                Project
-              </a>
-             
-            <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.youtube.com/watch?v=TtunDTMqcCo" target="_blank" rel="noopener">
-              Video
-            </a>
-             -->
           </div>
         </div>
         <!-- Publication 2022 end -->
@@ -663,15 +1080,15 @@
         <div class="card-simple view-card">
           <div class="article-metadata">
             <div>
-              <span class="author-highlighted">
-                Turcan Tuna</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>, <span >
-                Salih Ertug Ovur</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>, <span >
-                Etka Gokbel</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>, <span >
-                Tufan Kumbasar</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>, <span >
+              <span class="author-highlighted">Turcan Tuna</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>,
+              <span>Salih Ertug Ovur</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>,
+              <span>Etka Gokbel</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>,
+              <span>Tufan Kumbasar</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>
+
+              <span class="article-date">
+                May, 2020
+              </span>
             </div>
-            <span class="article-date">
-              May, 2020
-            </span>
             <span class="middot-divider">
             </span>
             <span class="pub-publication">
@@ -696,74 +1113,61 @@
             <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.sciencedirect.com/science/article/pii/S1270963819328676?via%3Dihub" target="_blank" rel="noopener">
               PDF
             </a>
-            <a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-                    data-filename="/publication/follyJournal/cite.bib">
+            <a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/publication/follyJournal/cite.bib">
               Cite
             </a>
-            <!--
-              <a class="btn btn-outline-primary btn-page-header btn-sm" href="/project//">
-                Project
-              </a>
-              -->
             <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.youtube.com/watch?v=TtunDTMqcCo" target="_blank" rel="noopener">
               Video
             </a>
           </div>
         </div>
         <!-- Publication 1 end -->
-      
+
         <!-- Publication 2 start -->
         <div class="card-simple view-card">
           <div class="article-metadata">
             <div>
-              <span class="author-highlighted">
-                  Turcan Tuna</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>, <span >
-                  Salih Ertug Ovur</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>, <span >
-                  Etka Gokbel</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>, <span >
-                  Tufan Kumbasar</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>, <span >
-                </div>
+              <span class="author-highlighted">Turcan Tuna</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>,
+              <span>Salih Ertug Ovur</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>,
+              <span>Etka Gokbel</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>,
+              <span>Tufan Kumbasar</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>
+
               <span class="article-date">
                 October, 2018
               </span>
-              <span class="middot-divider">
-              </span>
-              <span class="pub-publication">
-                  In <em>CEIT(2018)</em> <span class="middot-divider"></span><strong style="color:rgb(255,0,0);">Best Paper Award</strong>
-              </span>
             </div>
-            <a href="/publication/follyConference/" >
-              <div class="img-hover-zoom">
-                <img src="/publication/follyConference/featured.webp" height="340" width="511"
-                    class="article-banner" alt="FOLLY: A Self Foldable and Self Deployable Autonomous Quadcopter" loading="lazy">
-              </div>
-            </a>
-            <div class="section-subheading article-title mb-1 mt-3">
-              <a href="/publication/follyConference/" >FOLLY: A Self Foldable and Self Deployable Autonomous Quadcopter</a>
+            <span class="middot-divider">
+            </span>
+            <span class="pub-publication">
+              In <em>CEIT(2018)</em> <span class="middot-divider"></span><strong style="color:rgb(255,0,0);">Best Paper Award</strong>
+            </span>
+          </div>
+          <a href="/publication/follyConference/" >
+            <div class="img-hover-zoom">
+              <img src="/publication/follyConference/featured.webp" height="340" width="511"
+                  class="article-banner" alt="FOLLY: A Self Foldable and Self Deployable Autonomous Quadcopter" loading="lazy">
             </div>
-            <a href="/publication/follyConference/"  class="summary-link">
-              <div class="article-style">
-                <p>In this work, we propose a unique self foldable and self deployable autonomous quadcopter for search and rescue deployment.</p>
-              </div>
+          </a>
+          <div class="section-subheading article-title mb-1 mt-3">
+            <a href="/publication/follyConference/" >FOLLY: A Self Foldable and Self Deployable Autonomous Quadcopter</a>
+          </div>
+          <a href="/publication/follyConference/"  class="summary-link">
+            <div class="article-style">
+              <p>In this work, we propose a unique self foldable and self deployable autonomous quadcopter for search and rescue deployment.</p>
+            </div>
+          </a>
+          <div class="btn-links">
+            <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=8751883&amp;tag=1" target="_blank" rel="noopener">
+              PDF
             </a>
-            <div class="btn-links">
-              <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8751883&tag=1" target="_blank" rel="noopener">
-                PDF
-              </a>
-              <a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-                      data-filename="/publication/follyConference/cite.bib">
-                Cite
-              </a>
-              <!--
-              <a class="btn btn-outline-primary btn-page-header btn-sm" href="/project//">
-                Project
-              </a>
-              -->
+            <a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/publication/follyConference/cite.bib">
+              Cite
+            </a>
             <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.youtube.com/watch?v=TtunDTMqcCo" target="_blank" rel="noopener">
               Video
             </a>
           </div>
         </div>
-      
         <!-- Publication 2 end -->
       </div>
     </div>
@@ -823,7 +1227,7 @@
                 </div>
               </div>
             </div>
-                    
+
             <div class="col-12 isotope-item js-id-Featured js-id-Robotics js-id-Reinforcement-Learning">
               <div class="col-lg-12 mb-5 view-showcase">
                 <div class="row align-items-center">
@@ -845,8 +1249,8 @@
                 </div>
               </div>
             </div>
-                    
-            <div class="col-12 isotope-item js-id-Featured js-id-Robotics js-id-Reinforcement-Learning"> 
+
+            <div class="col-12 isotope-item js-id-Featured js-id-Robotics js-id-Reinforcement-Learning">
               <div class="col-lg-12 mb-5 view-showcase">
                 <div class="row align-items-center">
                   <div class="col-12 col-md-6">
@@ -868,7 +1272,7 @@
               </div>
             </div>
 
-            <div class="col-12 isotope-item js-id-Featured js-id-Robotics js-id-Reinforcement-Learning">      
+            <div class="col-12 isotope-item js-id-Featured js-id-Robotics js-id-Reinforcement-Learning">
               <div class="col-lg-12 mb-5 view-showcase">
                 <div class="row align-items-center">
                   <div class="col-12 col-md-6">
@@ -889,8 +1293,8 @@
                 </div>
               </div>
             </div>
-                      
-            <div class="col-12 isotope-item js-id-Featured js-id-Robotics js-id-Reinforcement-Learning">  
+
+            <div class="col-12 isotope-item js-id-Featured js-id-Robotics js-id-Reinforcement-Learning">
               <div class="col-lg-12 mb-5 view-showcase">
                 <div class="row align-items-center">
                   <div class="col-12 col-md-6">
@@ -939,7 +1343,7 @@
                 </div>
               </div>
             </div>
-                    
+
             <div class="col-12 isotope-item js-id-Deep-Learning">
               <div class="col-lg-12 mb-5 view-showcase">
                 <div class="row align-items-center">
@@ -1015,7 +1419,7 @@
               </div>
             </div>
 
-            <div class="col-12 isotope-item js-id-Deep-Learning">    
+            <div class="col-12 isotope-item js-id-Deep-Learning">
               <div class="col-lg-12 mb-5 view-showcase">
                 <div class="row align-items-center">
                   <div class="col-12 col-md-6">
@@ -1039,7 +1443,6 @@
                 </div>
               </div>
             </div>
-
 
             <div class="col-12 isotope-item js-id-Deep-Learning">
               <div class="col-lg-12 mb-5 view-showcase">
@@ -1065,7 +1468,7 @@
                 </div>
               </div>
             </div>
-                
+
             <div class="col-12 isotope-item js-id-Classic-Control">
               <div class="col-lg-12 mb-5 view-showcase">
                 <div class="row align-items-center">
@@ -1090,8 +1493,8 @@
                 </div>
               </div>
             </div>
-                    
-            <div class="col-12 isotope-item js-id-Robotics js-id-Classic-Control">   
+
+            <div class="col-12 isotope-item js-id-Robotics js-id-Classic-Control">
               <div class="col-lg-12 mb-5 view-showcase">
                 <div class="row align-items-center">
                   <div class="col-12 col-md-6">
@@ -1273,7 +1676,7 @@
                   </div>
                 </div>
               </div>
-            </div>  
+            </div>
 
             <div class="col-12 isotope-item js-id-Others">
               <div class="col-lg-12 mb-5 view-showcase">
@@ -1299,8 +1702,8 @@
                 </div>
               </div>
             </div>
-                
-            <div class="col-12 isotope-item js-id-Robotics js-id-Classic-Control">      
+
+            <div class="col-12 isotope-item js-id-Robotics js-id-Classic-Control">
               <div class="col-lg-12 mb-5 view-showcase">
                 <div class="row align-items-center">
                   <div class="col-12 col-md-6">
@@ -1325,7 +1728,7 @@
               </div>
             </div>
 
-            <div class="col-12 isotope-item js-id-Robotics js-id-Classic-Control">   
+            <div class="col-12 isotope-item js-id-Robotics js-id-Classic-Control">
               <div class="col-lg-12 mb-5 view-showcase">
                 <div class="row align-items-center">
                   <div class="col-12 col-md-6">
@@ -1350,7 +1753,7 @@
               </div>
             </div>
 
-            <div class="col-12 isotope-item js-id-Classic-Control">     
+            <div class="col-12 isotope-item js-id-Classic-Control">
               <div class="col-lg-12 mb-5 view-showcase">
                 <div class="row align-items-center">
                   <div class="col-12 col-md-6">
@@ -1374,7 +1777,7 @@
                 </div>
               </div>
             </div>
-      
+
       <div class="col-12 isotope-item js-id-Robotics js-id-Classic-Control">
         <div class="col-lg-12 mb-5 view-showcase">
           <div class="row align-items-center">
@@ -1466,7 +1869,62 @@
 
       <!-- Layout-->
       <div class="col-12 col-lg-8">
-        
+
+<!-- MIT SPARK Lab Research Exchange start -->
+<div class="row experience">
+  <div class="col-auto text-center flex-column d-none d-sm-flex">
+    <div class="row h-50">
+      <div class="col border-right">&nbsp;</div>
+      <div class="col">&nbsp;</div>
+    </div>
+    <div class="m-2">
+      <span class="badge badge-pill border ">&nbsp;</span>
+    </div>
+    <div class="row h-50">
+      <div class="col border-right">&nbsp;</div>
+      <div class="col">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col py-2">
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex align-content-start">
+          <div class="mr-2 mb-2">
+            <a href="https://mit.edu/sparklab/" target="_blank" rel="noopener">
+              <img
+                src="https://web.mit.edu/sparklab/assets/images/spark-shard.png"
+                width="56px"
+                height="56px"
+                alt="MIT SPARK Lab"
+                loading="lazy">
+            </a>
+          </div>
+          <div>
+            <div class="section-subheading card-title exp-title text-muted my-0">Research Exchange</div>
+            <div class="section-subheading card-title exp-company text-muted my-0">
+              <a href="https://mit.edu/sparklab/" target="_blank" rel="noopener">MIT SPARK Lab</a>
+            </div>
+            <div class="text-muted exp-meta">
+              Sep. 2024 – Dec. 2024
+              <span class="middot-divider"></span>
+              <span>MA, USA</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-text">
+          Research exchange at the MIT SPARK Lab, managed by
+          <a href="https://lucacarlone.mit.edu/" target="_blank" rel="noopener">Prof. Luca Carlone</a>.
+          <ul class="mb-0 mt-2">
+            <li>Research on spatial 3D mapping with Gaussian Splatting methods for a generalizable robotic mapping pipeline.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MIT SPARK Lab Research Exchange end -->
+
+
         <!-- RSL start -->
         <div class="row experience">
           <div class="col-auto text-center flex-column d-none d-sm-flex">
@@ -1535,7 +1993,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card-text">I conducted independent research and engineering work on robust localization and mapping for multiple robotic platforms under the supervision of <a href="https://rsl.ethz.ch/the-lab/people/person-detail.MTIxOTEx.TGlzdC8yNDQxLC0xNDI1MTk1NzM1.html" target="_blank" rel="noopener">Prof. Dr. Marco Hutter</a>.</div>
+                <div class="card-text">I conducted research and engineering work on robust localization and mapping for multiple robotic platforms under the supervision of <a href="https://rsl.ethz.ch/the-lab/people/person-detail.MTIxOTEx.TGlzdC8yNDQxLC0xNDI1MTk1NzM1.html" target="_blank" rel="noopener">Prof. Dr. Marco Hutter</a>.</div>
               </div>
             </div>
           </div>
@@ -1655,7 +2113,7 @@
           </div>
         </div>
         <!-- ASL end -->
-        
+
         <!-- ITU Tubitak start -->
         <div class="row experience">
           <div class="col-auto text-center flex-column d-none d-sm-flex">
@@ -1693,7 +2151,7 @@
           </div>
         </div>
         <!-- ITU Tubitak end -->
-        
+
         <!-- Imperial start -->
         <div class="row experience">
           <div class="col-auto text-center flex-column d-none d-sm-flex">
@@ -1747,47 +2205,32 @@
         <h1 class="mb-0">Robotic Platforms</h1>
         <p class="mt-1"></p> <!-- <p class="mt-1">I worked with</p> -->
       </div>
-      <!-- The layout -->  
+      <!-- The layout -->
       <div class="col-12 col-lg-8">
         <div class="isotope projects-container js-layout-masonry ">
-      
-          <!-- ALMA start -->
-          <div class="project-card project-item isotope-item ">
-            <div class="card">
-              <a href="https://rsl.ethz.ch/robots-media/alma.html" target="_blank" rel="noopener" class="card-image hover-overlay">
-                <img src="/platform/alma/featured_hub0639c50a2a33c7ac72a18d45088a898_1077712_550x0_resize_q75_h2_lanczos.webp" height="367" width="550"
-                    alt="ALMA" class="img-responsive" loading="lazy">
-              </a>
-              <div class="card-text">
-                <h4><a href="https://rsl.ethz.ch/robots-media/alma.html" target="_blank" rel="noopener">ALMA</a></h4>
-                <div class="article-style">
-                  <p>ALMA is an ANYmal that is equipped with a robotic arm designed for articulated locomotion and manipulation.</p>
-                </div>
-              </div>
-            </div>
-          </div> 
-          <!-- ALMA end -->
-        
-          <!-- ANYmal C start -->
-          <div class="project-card project-item isotope-item ">
+
+
+            <!-- ANYmal C start -->
+            <div class="project-card project-item isotope-item platform-card-match-anymal-d">
             <div class="card">
               <a href="https://www.anybotics.com/anymal-autonomous-legged-robot/" target="_blank" rel="noopener" class="card-image hover-overlay">
-                <img src="/platform/anymal/featured_huc57b664a0442722d3e99ec94e23a83fb_686761_550x0_resize_q75_h2_lanczos_3.webp" height="550" width="550"
-                    alt="ANYmal C" class="img-responsive" loading="lazy">
+              <img src="/platform/anymal/featured_huc57b664a0442722d3e99ec94e23a83fb_686761_550x0_resize_q75_h2_lanczos_3.webp" height="550" width="550"
+                alt="ANYmal C" class="img-responsive" loading="lazy"
+                style="object-fit: contain; background: #fff;">
               </a>
               <div class="card-text">
-                <h4><a href="https://www.anybotics.com/anymal-autonomous-legged-robot/" target="_blank" rel="noopener">ANYmal C</a></h4>
+              <h4><a href="https://www.anybotics.com/anymal-autonomous-legged-robot/" target="_blank" rel="noopener">ANYmal C</a></h4>
 
-                <div class="article-style">
-                  <p>ANYmal is a unique legged robot that provides reliable industrial solution with autonomous robot inspection.</p>
-                </div>
+              <div class="article-style">
+                <p>ANYmal is a unique legged robot that provides reliable industrial solution with autonomous robot inspection.</p>
+              </div>
               </div>
             </div>
-          </div>
-          <!-- ANYmal C end -->
+            </div>
+            <!-- ANYmal C end -->
 
           <!-- ANYmal D start -->
-          <div class="project-card project-item isotope-item ">
+          <div class="project-card project-item isotope-item platform-card-reference">
             <div class="card">
               <a href="https://www.anybotics.com/anymal-autonomous-legged-robot/" target="_blank" rel="noopener" class="card-image hover-overlay">
                 <img src="/platform/anymal_d/anymal_d.webp" height="550" width="550"
@@ -1803,6 +2246,94 @@
             </div>
           </div>
           <!-- ANYmal D end -->
+
+          <!-- B2W start -->
+          <div class="project-card project-item isotope-item ">
+            <div class="card">
+              <a href="https://shop.unitree.com/products/unitree-b2-w" target="_blank" rel="noopener" class="card-image hover-overlay">
+                <img src="https://shop.unitree.com/cdn/shop/files/1_01_3b15de92-3235-4675-8162-6adb231be57f_1024x1024.jpg?v=1718273847"
+                    height="303" width="550"
+                    alt="Unitree B2-W" class="img-responsive" loading="lazy">
+              </a>
+              <div class="card-text">
+                <h4><a href="https://shop.unitree.com/products/unitree-b2-w" target="_blank" rel="noopener">Unitree B2-W</a></h4>
+                <div class="article-style">
+                  <p>Unitree B2-W is a wheeled quadruped robot designed for high-efficiency mobility and industrial applications, with a focus on stable operation in complex terrain and autonomous inspection workflows.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- B2W end -->
+
+          <!-- ALMA start -->
+          <div class="project-card project-item isotope-item ">
+            <div class="card">
+              <a href="https://rsl.ethz.ch/robots-media/alma.html" target="_blank" rel="noopener" class="card-image hover-overlay">
+                <img src="/platform/alma/featured_hub0639c50a2a33c7ac72a18d45088a898_1077712_550x0_resize_q75_h2_lanczos.webp" height="367" width="550"
+                    alt="ALMA" class="img-responsive" loading="lazy">
+              </a>
+              <div class="card-text">
+                <h4><a href="https://rsl.ethz.ch/robots-media/alma.html" target="_blank" rel="noopener">ALMA</a></h4>
+                <div class="article-style">
+                  <p>ALMA is an ANYmal that is equipped with a robotic arm designed for articulated locomotion and manipulation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- ALMA end -->
+
+          <!-- A2-PRO start -->
+          <div class="project-card project-item isotope-item ">
+            <div class="card">
+              <a href="https://shop.unitree.com/products/unitree-a2" target="_blank" rel="noopener" class="card-image hover-overlay">
+                <img src="https://shop.unitree.com/cdn/shop/files/01_7dd342a4-fbbc-497e-b805-25c8ca8188ce_1024x1024.jpg?v=1769775047"
+                    height="309" width="550"
+                    alt="Unitree A2-PRO" class="img-responsive" loading="lazy">
+              </a>
+              <div class="card-text">
+                <h4><a href="https://shop.unitree.com/products/unitree-a2" target="_blank" rel="noopener">Unitree A2-PRO</a></h4>
+                <div class="article-style">
+                  <p>Unitree A2-PRO is an industrial quadruped robot platform for inspection, logistics, and emergency-response use cases, with dual industrial LiDARs, dual hot-swappable batteries, and an optional wheel-leg configuration for mixed-terrain mobility.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- A2-PRO end -->
+
+          <!-- SMB start -->
+          <div class="project-card project-item isotope-item ">
+            <div class="card">
+              <a href="https://unlimited.ethz.ch/display/ROBOTX/SuperMegaBot" target="_blank" rel="noopener" class="card-image hover-overlay">
+                <img src="/platform/supermegabot/featured_hu620adb755dd3ec1a1d47265673c4abd0_401449_550x0_resize_q75_h2_lanczos.webp" height="367" width="550"
+                    alt="SuperMegaBot" class="img-responsive" loading="lazy">
+              </a>
+              <div class="card-text">
+                <h4><a href="https://unlimited.ethz.ch/display/ROBOTX/SuperMegaBot" target="_blank" rel="noopener">SuperMegaBot</a></h4>
+                <div class="article-style">
+                  <p>SuperMegaBot is a wheeled automonous ground robot for eduation, and research in autonomous inspection. The current mechanical design is a product of my work at ASL as a HiWi.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SMB end -->
+
+<!-- TRON1 start -->
+<div class="project-card project-item isotope-item ">
+  <div class="card">
+    <a href="https://www.limxdynamics.com/en/tron1" target="_blank" rel="noopener" class="card-image hover-overlay">
+      <img src="https://cdn.limxdynamics.com/uploads/1_797d6818d9.png"
+          height="917" width="550"
+          alt="TRON 1" class="img-responsive" loading="lazy">
+    </a>
+    <div class="card-text">
+      <h4><a href="https://www.limxdynamics.com/en/tron1" target="_blank" rel="noopener">TRON 1</a></h4>
+      <div class="article-style">
+        <p>TRON 1 is a multi-modal biped robot platform for humanoid motion control and embodied AI research, featuring a three-in-one modular foot-end system (point-foot, sole, and wheeled) plus an open SDK for rapid algorithm development and RL validation.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- TRON1 end -->
 
           <!-- Folly start -->
           <div class="project-card project-item isotope-item ">
@@ -1822,22 +2353,6 @@
           </div>
           <!-- Folly end -->
 
-          <!-- SMB start -->
-          <div class="project-card project-item isotope-item ">
-            <div class="card">
-              <a href="https://unlimited.ethz.ch/display/ROBOTX/SuperMegaBot" target="_blank" rel="noopener" class="card-image hover-overlay">
-                <img src="/platform/supermegabot/featured_hu620adb755dd3ec1a1d47265673c4abd0_401449_550x0_resize_q75_h2_lanczos.webp" height="367" width="550"
-                    alt="SuperMegaBot" class="img-responsive" loading="lazy">
-              </a>
-              <div class="card-text">
-                <h4><a href="https://unlimited.ethz.ch/display/ROBOTX/SuperMegaBot" target="_blank" rel="noopener">SuperMegaBot</a></h4>
-                <div class="article-style">
-                  <p>SuperMegaBot is a wheeled automonous ground robot for eduation, and research in autonomous inspection. The current mechanical design is a product of my work at ASL as a HiWi.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- SMB end -->
 
         </div>
       </div>
@@ -1847,27 +2362,30 @@
 <!-- Robot platforms end -->
 
 <!-- Contact start -->
-<section id="contact" class="home-section wg-contact  "  >
-  <div class="home-section-bg " >
-  </div>
+<section id="contact" class="home-section wg-contact">
+  <div class="home-section-bg"></div>
   <div class="container">
-    <div class="row  ">
+    <div class="row">
       <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
         <h1 class="mb-0">Contact</h1>
       </div>
+
       <div class="col-12 col-lg-8">
         <ul class="fa-ul">
-            <li>
-              <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
-              <span id="person-address">Rämistrasse 101, 8092 Zurich</span>
-            </li>
+          <li>
+            <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
+            <span id="person-address">Rämistrasse 101, 8092 Zurich</span>
+          </li>
+
           <li>
             <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
-            <a href="mailto:tutuna@ethz.ch" ><a href="mailto:tutuna@ethz.ch">tutuna@ethz.ch</a></a>
+            <a href="mailto:tutuna@ethz.ch">tutuna@ethz.ch</a>
           </li>
+
           <li>
-            <a href="https://www.linkedin.com/in/turcan-tuna-67a9ba1b8/" target="_blank" rel="noopener" aria-label="linkedin"> Connect with me
-              <i class="fab fa-linkedin big-icon"></i>
+            <i class="fa-li fab fa-linkedin fa-2x" aria-hidden="true"></i>
+            <a href="https://www.linkedin.com/in/turcan-tuna-67a9ba1b8/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              Connect with me
             </a>
           </li>
         </ul>
@@ -1875,14 +2393,13 @@
     </div>
   </div>
 </section>
-
 </div>
 
 <div class="page-footer">
   <div class="container">
     <footer class="site-footer">
       <p class="powered-by copyright-license-text">
-        © 2023 Turcan Tuna. This website has been modified from <a href="https://breadli428.github.io/" rel="noopener noreferrer" target="_blank">Chenhao Li&rsquo;s website</a>. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+        © 2026 Turcan Tuna. This website has been modified from <a href="https://breadli428.github.io/" rel="noopener noreferrer" target="_blank">Chenhao Li&rsquo;s website</a>. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
       </p>
       <p class="powered-by footer-license-icons">
         <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
@@ -1893,7 +2410,7 @@
         </a>
       </p>
       <p class="powered-by">
-          Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+           
       </p>
     </footer>
   </div>
@@ -1917,7 +2434,7 @@
     </div>
   </script>
     <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
 <script id="page-data" type="application/json">{"use_headroom":false}</script>
 <script src="/en/js/wowchemy.min.3239609ca7abe02ed52d76ffcb22af1d.js"></script>
 <div id="modal" class="modal fade" role="dialog">
@@ -1945,5 +2462,36 @@
   </div>
 </div>
 <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+<script>
+  // Match ANYmal C card height to ANYmal D so both cards remain the same size.
+  (function () {
+    function syncAnymalCardHeights() {
+      var referenceText = document.querySelector('.platform-card-reference .card-text');
+      var targetText = document.querySelector('.platform-card-match-anymal-d .card-text');
+
+      if (!referenceText || !targetText) {
+        return;
+      }
+
+      targetText.style.minHeight = '';
+      targetText.style.minHeight = referenceText.getBoundingClientRect().height + 'px';
+
+      if (window.jQuery) {
+        var $container = window.jQuery('#platforms .projects-container');
+        if ($container.length && $container.data('isotope')) {
+          $container.isotope('layout');
+        }
+      }
+    }
+
+    window.addEventListener('load', syncAnymalCardHeights);
+
+    var resizeTimer;
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(syncAnymalCardHeights, 120);
+    });
+  })();
+</script>
 </body>
 </html>
