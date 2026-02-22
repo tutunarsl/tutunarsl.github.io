@@ -1,0 +1,274 @@
+{
+  "section_title": "Featured Publications",
+  "entries": [
+    {
+      "id": "TRO",
+      "authors": [
+        {
+          "name": "Turcan Tuna",
+          "affiliation": "Robotics Systems Lab, ETH Zurich",
+          "highlighted": true
+        },
+        {
+          "name": "Julian Nubert",
+          "affiliation": "Robotics Systems Lab, ETH Zurich"
+        },
+        {
+          "name": "Yoshua Nava",
+          "affiliation": "ANYbotics AG, Zurich"
+        },
+        {
+          "name": "Shehryar Khattak",
+          "affiliation": "Robotics Systems Lab, ETH Zurich"
+        },
+        {
+          "name": "Marco Hutter",
+          "affiliation": "Robotics Systems Lab, ETH Zurich"
+        }
+      ],
+      "date": ", 2023",
+      "venue_html": "<strong style=\"color:rgba(33, 183, 33, 0.588);\">(Published)</strong> for <em>IEEE Transactions on Robotics (T-RO)</em>",
+      "page_url": "/publication/TRO/",
+      "image": {
+        "src": "/publication/TRO/website_OnlyRobotOverviewFigure.png",
+        "height": 340,
+        "width": 511,
+        "alt": "X-ICP: Localizability-Aware LiDAR Registration for Robust Localization in Extreme Environments"
+      },
+      "title": "X-ICP: Localizability-Aware LiDAR Registration for Robust Localization in Extreme Environments",
+      "summary": "In this work we propose i) a robust multi-category (non-)localizability detection module, and ii) a localizability-aware constrained ICP optimization module and couples both in a unified manner. The proposed localizability detection is achieved by utilizing the correspondences between the scan and the map to analyze the alignment strength against the principal directions of the optimization as part of its multi-category LiDAR localizability analysis. In the second part, this localizability analysis is then tightly integrated into the scan-to-map point cloud registration to generate drift-free pose updates along well-constrained directions.",
+      "buttons": [
+        {
+          "label": "PDF",
+          "href": "https://arxiv.org/pdf/2211.16335.pdf",
+          "target_blank": true
+        },
+        {
+          "label": "Cite",
+          "type": "cite",
+          "filename": "/publication/TRO/cite.bib"
+        },
+        {
+          "label": "Project",
+          "href": "https://sites.google.com/leggedrobotics.com/x-icp"
+        },
+        {
+          "label": "Video",
+          "href": "https://www.youtube.com/watch?v=f-i-br-l5QA",
+          "target_blank": true
+        }
+      ]
+    },
+    {
+      "id": "SciRo",
+      "authors": [
+        {
+          "name": "Philip Arm",
+          "affiliation": "Robotics Systems Lab, ETH Zurich"
+        },
+        {
+          "name": "Gabriel Waibel",
+          "affiliation": "Robotics Systems Lab, ETH Zurich"
+        },
+        {
+          "name": "Jan Preisig",
+          "affiliation": "Robotics Systems Lab, ETH Zurich"
+        },
+        {
+          "name": "Turcan Tuna",
+          "affiliation": "Robotics Systems Lab, ETH Zurich"
+        },
+        {
+          "name": "Ruyi Zhou",
+          "affiliation": "Robotics Systems Lab, ETH Zurich and State Key Laboratory of Robotics and System, Harbin"
+        },
+        {
+          "name": "Valentin Bickel",
+          "affiliation": "Laboratory of Hydraulics, Hydrology and Glaciology, ETH Zurich"
+        },
+        {
+          "name": "Gabriela Ligeza",
+          "affiliation": "Department of Environmental Sciences, University of Basel"
+        },
+        {
+          "name": "Takahiro Miki",
+          "affiliation": "Robotics Systems Lab, ETH Zurich"
+        },
+        {
+          "name": "Floarian Kehl",
+          "affiliation": "nnovation Cluster Space and Aviation (UZH Space Hub), Air Force Center"
+        },
+        {
+          "name": "Hendrik MiKolvenbach",
+          "affiliation": "Robotics Systems Lab, ETH Zurich"
+        },
+        {
+          "name": "Marco Hutter",
+          "affiliation": "Robotics Systems Lab, ETH Zurich"
+        }
+      ],
+      "date": ", 2022",
+      "venue_html": "<strong style=\"color:rgba(33, 183, 33, 0.588);\">(Under-review)</strong> in <em>Journal of Science Robotics</em>",
+      "page_url": "/publication/sciRo/",
+      "image": {
+        "src": "/publication/sciRo/featured.webp",
+        "height": 340,
+        "width": 511,
+        "style": "border:2px solid black",
+        "alt": "Scientific Exploration of Challenging Planetary Analog Environments with a Team of Legged Robots"
+      },
+      "title": "Scientific Exploration of Challenging Planetary Analog Environments with a Team of Legged Robots",
+      "summary": "This article presents a team of legged robots for exploration missions in challenging planetary analog environments. We equipped the robots with an efficient locomotion controller, a mapping pipeline for online and post-mission visualization, semantic and instance segmentation to highlight scientific targets, and advanced payloads for remote and in-situ scientific investigation.",
+      "buttons": [
+        {
+          "label": "Video",
+          "href": "https://www.youtube.com/watch?v=I9eeqFImT1A&feature=youtu.be",
+          "target_blank": true
+        }
+      ]
+    },
+    {
+      "id": "2022",
+      "authors": [
+        {
+          "name": "Turcan Tuna",
+          "affiliation": "Control and Automation Engineering Istanbul Technical University, Turkey",
+          "highlighted": true
+        },
+        {
+          "name": "Aykut Beke",
+          "affiliation": "Control and Automation Engineering Istanbul Technical University, Turkey"
+        },
+        {
+          "name": "Tufan Kumbasar",
+          "affiliation": "Control and Automation Engineering Istanbul Technical University, Turkey"
+        }
+      ],
+      "date": "May, 2021",
+      "venue_html": "In <em>Journal of Applied Intelligence</em>",
+      "page_url": "/publication/deepLearningJournal/",
+      "image": {
+        "src": "/publication/deepLearningJournal/featured.webp",
+        "height": 340,
+        "width": 511,
+        "style": "border:2px solid black",
+        "alt": "Deep learning frameworks to learn prediction and simulation focused control system models"
+      },
+      "title": "Deep learning frameworks to learn prediction and simulation focused control system models",
+      "summary": "In this work, we present Simulation and prediction focuced DNNs for non-linear system identification problem. Furthermore, we provide recommendations on how deep AEs and LSTMs should be utilized to end up with efficient Prediction-focused (Pf) and Simulation-focused (Sf) DNNs for time series and system identification problems.",
+      "buttons": [
+        {
+          "label": "PDF",
+          "href": "https://link.springer.com/article/10.1007/s10489-021-02416-0",
+          "target_blank": true
+        },
+        {
+          "label": "Cite",
+          "type": "cite",
+          "filename": "/publication/deepLearningJournal/cite.bib"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "authors": [
+        {
+          "name": "Turcan Tuna",
+          "affiliation": "Control and Automation Engineering Istanbul Technical University, Turkey",
+          "highlighted": true
+        },
+        {
+          "name": "Salih Ertug Ovur",
+          "affiliation": "Control and Automation Engineering Istanbul Technical University, Turkey"
+        },
+        {
+          "name": "Etka Gokbel",
+          "affiliation": "Control and Automation Engineering Istanbul Technical University, Turkey"
+        },
+        {
+          "name": "Tufan Kumbasar",
+          "affiliation": "Control and Automation Engineering Istanbul Technical University, Turkey"
+        }
+      ],
+      "date": "May, 2020",
+      "venue_html": "In <em>Journal of Aerospace Science and Technology</em>",
+      "page_url": "/publication/follyJournal/",
+      "image": {
+        "src": "/publication/follyJournal/featured.webp",
+        "height": 340,
+        "width": 511,
+        "style": "border:2px solid black",
+        "alt": "Design and development of FOLLY: A self-foldable and self-deployable quadcopter"
+      },
+      "title": "Design and development of FOLLY: A self-foldable and self-deployable quadcopter",
+      "summary": "In this work, we extend the design principles of previously established a unique self foldable and self deployable autonomous quadcopter, FOLLY, for volume limited applications and fast steady deployment. We thoroughly explain the design principles and mechanics that drive FOLLY.",
+      "buttons": [
+        {
+          "label": "PDF",
+          "href": "https://www.sciencedirect.com/science/article/pii/S1270963819328676?via%3Dihub",
+          "target_blank": true
+        },
+        {
+          "label": "Cite",
+          "type": "cite",
+          "filename": "/publication/follyJournal/cite.bib"
+        },
+        {
+          "label": "Video",
+          "href": "https://www.youtube.com/watch?v=TtunDTMqcCo",
+          "target_blank": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "authors": [
+        {
+          "name": "Turcan Tuna",
+          "affiliation": "Control and Automation Engineering Istanbul Technical University, Turkey",
+          "highlighted": true
+        },
+        {
+          "name": "Salih Ertug Ovur",
+          "affiliation": "Control and Automation Engineering Istanbul Technical University, Turkey"
+        },
+        {
+          "name": "Etka Gokbel",
+          "affiliation": "Control and Automation Engineering Istanbul Technical University, Turkey"
+        },
+        {
+          "name": "Tufan Kumbasar",
+          "affiliation": "Control and Automation Engineering Istanbul Technical University, Turkey"
+        }
+      ],
+      "date": "October, 2018",
+      "venue_html": "In <em>CEIT(2018)</em> <span class=\"middot-divider\"></span><strong style=\"color:rgb(255,0,0);\">Best Paper Award</strong>",
+      "page_url": "/publication/follyConference/",
+      "image": {
+        "src": "/publication/follyConference/featured.webp",
+        "height": 340,
+        "width": 511,
+        "alt": "FOLLY: A Self Foldable and Self Deployable Autonomous Quadcopter"
+      },
+      "title": "FOLLY: A Self Foldable and Self Deployable Autonomous Quadcopter",
+      "summary": "In this work, we propose a unique self foldable and self deployable autonomous quadcopter for search and rescue deployment.",
+      "buttons": [
+        {
+          "label": "PDF",
+          "href": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8751883&tag=1",
+          "target_blank": true
+        },
+        {
+          "label": "Cite",
+          "type": "cite",
+          "filename": "/publication/follyConference/cite.bib"
+        },
+        {
+          "label": "Video",
+          "href": "https://www.youtube.com/watch?v=TtunDTMqcCo",
+          "target_blank": true
+        }
+      ]
+    }
+  ]
+}
