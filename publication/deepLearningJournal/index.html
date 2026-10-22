@@ -9,17 +9,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather&family=Roboto+Mono&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather&family=Roboto+Mono&display=swap" media="print" onload="this.media='all'">
-  
+
   <meta name="author" content="Turcan Tuna" />
-  <meta name="description" content="In this work, we present Simulation and prediction focuced DNNs for non-linear system identification problem. Furthermore, we provide recommendations on how deep AEs and LSTMs should be utilized to end up with efficient Prediction-focused (Pf) and Simulation-focused
-  (Sf) DNNs for time series and system identification problems." />
-  <link rel="alternate" hreflang="en-us" href="https://tutunarsl.github.io/publication/deepLearningJournal/" />
+  <meta name="description" content="Studies prediction-focused and simulation-focused deep models for nonlinear system identification, including autoencoder and recurrent-network designs." />
+  <link rel="alternate" hreflang="en-us" href="https://www.turcantuna.com/publication/deepLearningJournal/" />
   <meta name="theme-color" content="#1565c0" />
   <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
-  <link rel="stylesheet" href="/css/wowchemy.7a3e98956280c01a8ca4dcc686c8e7c6.css" />
+  <link rel="stylesheet" href="/css/wowchemy.6972a26959e318d9b89255575495ee39.css" />
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W8PNE87VQG"></script>
 <script>
@@ -47,7 +46,7 @@
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));
   }
 
   gtag('js', new Date());
@@ -60,67 +59,59 @@
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="icon" type="image/png" href="/media/small_icon.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/small_icon.png" />
-  <link rel="canonical" href="https://tutunarsl.github.io/publication/deepLearningJournal/" />
+  <link rel="canonical" href="https://www.turcantuna.com/publication/deepLearningJournal/" />
 
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:site" content="@tutunarsl" />
   <meta property="twitter:creator" content="@tutunarsl" />
   <meta property="og:site_name" content="Turcan Tuna" />
-  <meta property="og:url" content="https://tutunarsl.github.io/publication/deepLearningJournal/" />
-  <meta property="og:title" content="Deep learning frameworks to learn prediction
-and simulation focused control system models | Turcan Tuna" />
-  <meta property="og:description" content="In this work, we present Simulation and prediction focuced DNNs for non-linear system identification problem. Furthermore, we provide recommendations on how deep AEs and LSTMs should be utilized to end up with efficient Prediction-focused (Pf) and Simulation-focused
-  (Sf) DNNs for time series and system identification problems." /><meta property="og:image" content="https://tutunarsl.github.io/publication/deepLearningJournal/featured.png" />
-  <meta property="twitter:image" content="https://tutunarsl.github.io/publication/deepLearningJournal/featured.png" /><meta property="og:locale" content="en-us" />
-  <meta
-    property="article:published_time"
-    content="2022-06-15T00:00:00&#43;00:00"
-  />
-    
-  <meta property="article:modified_time" content="2022-06-15T00:00:00&#43;00:00">
+  <meta property="og:url" content="https://www.turcantuna.com/publication/deepLearningJournal/" />
+  <meta property="og:title" content="Deep learning frameworks to learn prediction and simulation focused control system models | Turcan Tuna" />
+  <meta property="og:description" content="Studies prediction-focused and simulation-focused deep models for nonlinear system identification, including autoencoder and recurrent-network designs." /><meta property="og:image" content="https://www.turcantuna.com/publication/deepLearningJournal/featured.webp" />
+  <meta property="twitter:image" content="https://www.turcantuna.com/publication/deepLearningJournal/featured.webp" /><meta property="og:locale" content="en-us" />
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://tutunarsl.github.io/publication/deepLearningJournal/"
-  },
-  "headline": "Deep learning frameworks to learn prediction
-and simulation focused control system models",
-  
+  "@type": "ScholarlyArticle",
+  "mainEntityOfPage": "https://www.turcantuna.com/publication/deepLearningJournal/",
+  "headline": "Deep learning frameworks to learn prediction and simulation focused control system models",
   "image": [
-    "https://tutunarsl.github.io/publication/deepLearningJournal/featured.png"
+    "https://www.turcantuna.com/publication/deepLearningJournal/featured.webp"
   ],
-  
-  "datePublished": "2022-06-15T00:00:00Z",
-  "dateModified": "2022-06-15T00:00:00Z",
-  
-  "author": {
-    "@type": "Person",
-    "name": "Turcan Tuna"
-  },
-  
-  "publisher": {
-    "@type": "Organization",
-    "name": "Turcan Tuna",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://tutunarsl.github.io/media/small_icon.png"
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Turcan Tuna"
+    },
+    {
+      "@type": "Person",
+      "name": "Aykut Beke"
+    },
+    {
+      "@type": "Person",
+      "name": "Tufan Kumbasar"
     }
+  ],
+  "description": "Studies prediction-focused and simulation-focused deep models for nonlinear system identification, including autoencoder and recurrent-network designs.",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Applied Intelligence"
   },
-  "description": "In this work, we present Simulation and prediction focuced DNNs for non-linear system identification problem. Furthermore, we provide recommendations on how deep AEs and LSTMs should be utilized to end up with efficient Prediction-focused (Pf) and Simulation-focused
-  (Sf) DNNs for time series and system identification problems."
+  "identifier": "https://doi.org/10.1007/s10489-021-02416-0",
+  "sameAs": "https://doi.org/10.1007/s10489-021-02416-0",
+  "datePublished": "2022",
+  "volumeNumber": "52",
+  "issueNumber": "1",
+  "pagination": "662-679"
 }
 </script>
-  <title>Deep learning frameworks to learn prediction
-and simulation focused control system models | Turcan Tuna</title>
+  <title>Deep learning frameworks to learn prediction and simulation focused control system models | Turcan Tuna</title>
 </head>
 
 
 <body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="2d9dbc2271f2b4def21e049fc8feb639" >
-  <script src="/js/wowchemy-init.min.2ed908358299dd7ab553faae685c746c.js"></script>
+  <script src="/js/wowchemy-init.min.63ea641d74f2383cb7e000210eb7035d.js"></script>
 <aside class="search-modal" id="search">
   <div class="container">
     <section class="search-header">
@@ -139,7 +130,7 @@ and simulation focused control system models | Turcan Tuna</title>
       </div>
     </section>
     <section class="section-search-results">
-      <div id="search-hits">  
+      <div id="search-hits">
       </div>
     </section>
   </div>
@@ -164,7 +155,7 @@ and simulation focused control system models | Turcan Tuna</title>
             <a class="nav-link " href="/#about"><span>Home</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="/#news"><span>Updates</span></a>
+            <a class="nav-link " href="/#updates"><span>Updates</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="/#featured"><span>Publications</span></a>
@@ -216,37 +207,22 @@ and simulation focused control system models | Turcan Tuna</title>
   <h1>Deep learning frameworks to learn prediction
 and simulation focused control system models</h1>
 <div class="article-metadata">
-  <div>
-    <span class="author-highlighted">
-      Turcan Tuna</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>, <span >
-      Aykut Beke</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>, <span >
-      Tufan Kumbasar</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>, <span >
-  </div>
-  <span class="article-date">
-    May, 2021
-  </span>
+  <div>              <span class="author-highlighted">Turcan Tuna</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>,
+              <span>Aykut Beke</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i>,
+              <span>Tufan Kumbasar</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Control and Automation Engineering Istanbul Technical University, Turkey"></i></div>
+  <span class="article-date">2022</span>
+  <span class="middot-divider"></span>
+  <span class="pub-publication"><a href="https://doi.org/10.1007/s10489-021-02416-0" target="_blank" rel="noopener"><em>Applied Intelligence 52(1), 662–679, 2022</em></a></span>
+
 </div>
 
 <div class="btn-links mb-3">
-
-<a class="btn btn-outline-primary btn-page-header" href="https://www.sciencedirect.com/science/article/pii/S1270963819328676" target="_blank" rel="noopener">
-  PDF
-</a>
-
-<a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
-        data-filename="/publication/deepLearningJournal/cite.bib">
-  Cite
-</a>
-
-<!-- 
-<a class="btn btn-outline-primary btn-page-header" href="/project//">
-  Project
-</a>
--->
-<a class="btn btn-outline-primary btn-page-header" href="https://www.youtube.com/watch?v=TtunDTMqcCo" target="_blank" rel="noopener">
-  Video
-</a>
-
+            <a class="btn btn-outline-primary btn-page-header" href="https://doi.org/10.1007/s10489-021-02416-0" target="_blank" rel="noopener">
+              Paper
+            </a>
+            <a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal" data-filename="/publication/deepLearningJournal/cite.bib">
+              Cite
+            </a>
 </div>
 </div>
 
@@ -275,7 +251,7 @@ and simulation focused control system models</h1>
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Type</div>
           <div class="col-12 col-md-9">
-            <a href="/publication/#1">
+            <a href="/publication/#2">
               Journal Article
             </a>
           </div>
@@ -285,7 +261,7 @@ and simulation focused control system models</h1>
     </div>
     <div class="d-md-none space-below"></div>
 
-    
+
     <div class="row">
       <div class="col-md-1"></div>
       <div class="col-md-10">
@@ -303,48 +279,12 @@ and simulation focused control system models</h1>
 </div>
 
 
-<!--
-<div class="share-box">
-  <ul class="share">
-      <li>
-        <a href="https://twitter.com/intent/tweet?url=https://tutunarsl.github.io/publication/deepLearningJournal/&amp;text=Learning%20Agile%20Skills%20via%20Adversarial%20Imitation%20of%20Rough%20Partial%20Demonstrations" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://tutunarsl.github.io/publication/deepLearningJournal/&amp;t=Learning%20Agile%20Skills%20via%20Adversarial%20Imitation%20of%20Rough%20Partial%20Demonstrations" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </li>
-      <li>
-        <a href="mailto:?subject=Learning%20Agile%20Skills%20via%20Adversarial%20Imitation%20of%20Rough%20Partial%20Demonstrations&amp;body=https://tutunarsl.github.io/publication/deepLearningJournal/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://tutunarsl.github.io/publication/deepLearningJournal/&amp;title=Learning%20Agile%20Skills%20via%20Adversarial%20Imitation%20of%20Rough%20Partial%20Demonstrations" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </li>
-      <li>
-        <a href="whatsapp://send?text=Learning%20Agile%20Skills%20via%20Adversarial%20Imitation%20of%20Rough%20Partial%20Demonstrations%20https://tutunarsl.github.io/publication/deepLearningJournal/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://tutunarsl.github.io/publication/deepLearningJournal/&amp;title=Learning%20Agile%20Skills%20via%20Adversarial%20Imitation%20of%20Rough%20Partial%20Demonstrations" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
-          <i class="fab fa-weibo"></i>
-        </a>
-      </li>
-    
-  </ul>
-</div>
--->
+
 
   <div class="media author-card content-widget-hr">
-      <a href="https://tutunarsl.github.io/"><img class="avatar mr-3 avatar-square" src="/authors/admin/avatar.jpg" alt="Turcan Tuna"></a>
+      <a href="https://www.turcantuna.com/"><img class="avatar mr-3 avatar-square" src="/authors/admin/avatar.jpg" alt="Turcan Tuna"></a>
     <div class="media-body">
-      <h5 class="card-title"><a href="https://tutunarsl.github.io/">Turcan Tuna</a></h5>
+      <h5 class="card-title"><a href="https://www.turcantuna.com/">Turcan Tuna</a></h5>
       <h6 class="card-subtitle">PhD Candidate at Robotic Systems Lab, ETH Zurich</h6>
       <p class="card-text">My research mainly focuses on incorporating state-of-the-art optimization and machine learning approaches into robust localization and mapping frameworks.  Specifically, I specialize in robust localization and perception in degenerate and challenging environments utilizing optimization and learning based methods. Additionally, I am highly interested in multi-modal fast volumetric mapping and efficient and consistent local and global representations.</p>
       <ul class="network-icon" aria-hidden="true">
@@ -363,21 +303,13 @@ and simulation focused control system models</h1>
         <i class="ai ai-google-scholar"></i>
       </a>
     </li>
+
     <li>
-      <a href=" " target="_blank" rel="noopener">
-        <i class="fab fa-youtube"></i>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.linkedin.com/in/turcan-tuna-67a9ba1b8/" target="_blank" rel="noopener">
+      <a href="https://www.linkedin.com/in/turcantuna/" target="_blank" rel="noopener">
         <i class="fab fa-linkedin"></i>
       </a>
     </li>
-    <li>
-      <a href=" " target="_blank" rel="noopener">
-        <i class="fab fa-twitter"></i>
-      </a>
-    </li>
+
 </ul>
     </div>
   </div>
@@ -400,7 +332,7 @@ and simulation focused control system models</h1>
     </a>
   </p>
   <p class="powered-by">
-       
+
   </p>
 </footer>
     </div>
@@ -424,8 +356,8 @@ and simulation focused control system models</h1>
         <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
     <script id="page-data" type="application/json">{"use_headroom":true}</script>
       <script src="/js/wowchemy-headroom.c251366b4128fd5e6b046d4c97a62a51.js" type="module"></script>
-    <script src="/en/js/wowchemy.min.3239609ca7abe02ed52d76ffcb22af1d.js"></script>
-   
+    <script src="/en/js/wowchemy.min.038e845027eabfe4cb5df07f14a0f0df.js"></script>
+
 <div id="modal" class="modal fade" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -442,7 +374,7 @@ and simulation focused control system models</h1>
         <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
           <i class="fas fa-copy"></i> Copy
         </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" download="cite.bib">
           <i class="fas fa-download"></i> Download
         </a>
         <div id="modal-error"></div>
@@ -450,6 +382,6 @@ and simulation focused control system models</h1>
     </div>
   </div>
 </div>
-<script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+<script src="/js/wowchemy-publication.7db997b0a87556ac4dd71359ad20c0b4.js" type="module"></script>
 </body>
 </html>
