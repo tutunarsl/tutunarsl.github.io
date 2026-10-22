@@ -1651,7 +1651,6 @@
       "equal_contributors": [],
       "citation_note": "",
       "source_urls": [
-        "https://research.itu.edu.tr/tr/publications/correction-to-deep-learning-frameworks-to-learn-prediction-and-si/",
         "https://doi.org/10.1007/s10489-021-02416-0"
       ],
       "abstract": "The paper develops deep-learning frameworks for time-series forecasting and nonlinear system identification. Autoencoders learn compact representations, while long short-term memory networks capture temporal behavior. These components are organized into prediction-focused and simulation-focused models, reflecting the different requirements of estimating the next observation and generating an evolving system trajectory. The work explains how to construct and train the architectures and gives practical guidance on combining their components. Benchmark problems and real-world datasets are used to compare the proposed models with conventional, shallow and other deep neural networks. The experiments show that useful modeling accuracy can be retained with a low-dimensional feature representation, supporting compact learned descriptions of nonlinear dynamics.",
@@ -1819,59 +1818,6 @@
       "abstract": "The conference paper introduces FOLLY as a quadcopter whose arms can fold and deploy without manual handling. The design targets the transport and deployment limitations of fixed-frame aircraft and manually folded platforms. An onboard mechanism coordinates the arm motion through mechanical linkages and spur gears, allowing the vehicle to move between compact and flight-ready configurations. The prototype completes the transition in approximately 0.6 seconds. Real-world experiments demonstrate the operation of the mechanism and the feasibility of the aircraft concept. This initial contribution establishes the self-managed arm design that is examined in greater mechanical and experimental detail in the later Aerospace Science and Technology journal article.",
       "abstract_source": "https://doi.org/10.1109/CEIT.2018.8751883",
       "abstract_kind": "summary"
-    },
-    {
-      "id": "deep_erratum",
-      "research_id": "deep_erratum",
-      "title": "Correction to: Deep learning frameworks to learn prediction and simulation focused control system models",
-      "summary": "Adds the funding acknowledgement for TUBITAK project 118E807 to the original deep-learning article.",
-      "date": "2022",
-      "year": 2022,
-      "featured": false,
-      "page_url": "/publication/deep-erratum/",
-      "publication_type": "correction",
-      "status": "published",
-      "venue": "Applied Intelligence",
-      "venue_label": "Applied Intelligence 52(1), 680, 2022 — Correction",
-      "doi": "10.1007/s10489-021-02538-5",
-      "arxiv_id": null,
-      "volume": "52",
-      "issue": "1",
-      "pages": "680",
-      "article_number": null,
-      "equal_contributors": [],
-      "authors": [
-        {
-          "name": "Turcan Tuna",
-          "highlighted": true
-        },
-        {
-          "name": "Aykut Beke",
-          "highlighted": false
-        },
-        {
-          "name": "Tufan Kumbasar",
-          "highlighted": false
-        }
-      ],
-      "citation_note": "Funding acknowledgement correction to doi:10.1007/s10489-021-02416-0.",
-      "venue_html": "<a href=\"https://doi.org/10.1007/s10489-021-02538-5\" target=\"_blank\" rel=\"noopener\"><em>Applied Intelligence 52(1), 680, 2022 — Correction</em></a>",
-      "buttons": [
-        {
-          "label": "Paper",
-          "href": "https://doi.org/10.1007/s10489-021-02538-5",
-          "target_blank": true
-        },
-        {
-          "label": "Cite",
-          "type": "cite",
-          "filename": "/publication/deep-erratum/cite.bib"
-        }
-      ],
-      "source_urls": [
-        "https://research.itu.edu.tr/tr/publications/correction-to-deep-learning-frameworks-to-learn-prediction-and-si/",
-        "https://doi.org/10.1007/s10489-021-02538-5"
-      ]
     }
   ]
 }

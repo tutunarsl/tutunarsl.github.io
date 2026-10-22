@@ -131,7 +131,7 @@ def main():
         errors.append('Search must contain each publication exactly once')
     for entry in catalog:
         names = [a['name'] for a in entry['authors']]
-        is_research_paper = entry['status'] in ('published', 'accepted') and entry['publication_type'] != 'correction'
+        is_research_paper = entry['status'] in ('published', 'accepted')
         if entry.get('featured') and not is_research_paper:
             errors.append(entry['id'] + ': featured entries must be published or accepted research papers')
         if is_research_paper:

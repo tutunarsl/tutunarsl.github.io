@@ -23,7 +23,6 @@ SITE_URL = "https://www.turcantuna.com"
 PUBLICATION_TYPES = {
     "conference": (1, "Conference paper"), "journal": (2, "Journal article"),
     "workshop": (3, "Workshop contribution"), "preprint": (4, "Preprint"),
-    "correction": (5, "Correction notice"),
 }
 
 SECTION_PATTERN = re.compile(
@@ -200,10 +199,9 @@ def render_archive(data: dict) -> str:
   </div>
 </div>''')
     type_options = ''.join(f'<option value=".pubtype-{code}">{label}</option>' for code, label in PUBLICATION_TYPES.values())
-    works = sum(e['publication_type'] != 'correction' for e in entries)
     return f'''<!-- Publication archive start -->
 <div class="universal-wrapper">
-  <p>{works} research works and {len(entries) - works} correction notice. <a href="/publication/cite.bib" download>Download bibliography</a></p>
+  <p>{len(entries)} research works. <a href="/publication/cite.bib" download>Download bibliography</a></p>
   <div class="row"><div class="col-lg-12">
     <div class="form-row mb-4">
       <div class="col-auto"><input type="search" class="filter-search form-control form-control-sm" placeholder="Search..." aria-label="Search publications" autocomplete="off" spellcheck="false"></div>
@@ -313,7 +311,7 @@ def render_feed(data: dict) -> str:
     rss = ET.Element("rss", version="2.0")
     channel = ET.SubElement(rss, "channel")
     for key, value in [("title", "Turcan Tuna — Publications"), ("link", SITE_URL + "/publication/"),
-                       ("description", "Research publications and correction notices by Turcan Tuna.")]:
+                       ("description", "Research publications by Turcan Tuna.")]:
         ET.SubElement(channel, key).text = value
     for entry in sorted(data["entries"], key=lambda item: item["year"], reverse=True):
         item = ET.SubElement(channel, "item")
@@ -498,7 +496,7 @@ def tex(value: str) -> str:
 def render_cv(data: dict, source: str) -> str:
     blocks = ['% Publications start']
     groups = [('journal', 'Journal Articles'), ('conference', 'Conference Proceedings'),
-              ('workshop', 'Workshop Contributions'), ('preprint', 'Preprints'), ('correction', 'Correction Notice')]
+              ('workshop', 'Workshop Contributions'), ('preprint', 'Preprints')]
     for kind, label in groups:
         if kind == 'conference': blocks.append(r'\clearpage')
         blocks.append(r'\cvsubsection{' + label + '}')
