@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather&family=Roboto+Mono&display=swap" media="print" onload="this.media='all'">
 
   <meta name="author" content="Turcan Tuna" />
-  <meta name="description" content="Detects localizability along optimization directions and uses that information to constrain ICP updates in geometrically uninformative environments." />
+  <meta name="description" content="Localizability-aware ICP detects weakly constrained directions and controls the registration update to keep LiDAR localization reliable in difficult geometry." />
   <link rel="alternate" hreflang="en-us" href="https://www.turcantuna.com/publication/TRO/" />
   <meta name="theme-color" content="#1565c0" />
   <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
@@ -67,7 +67,7 @@
   <meta property="og:site_name" content="Turcan Tuna" />
   <meta property="og:url" content="https://www.turcantuna.com/publication/TRO/" />
   <meta property="og:title" content="X-ICP: Localizability-Aware LiDAR Registration for Robust Localization in Extreme Environments | Turcan Tuna" />
-  <meta property="og:description" content="Detects localizability along optimization directions and uses that information to constrain ICP updates in geometrically uninformative environments." /><meta property="og:image" content="https://www.turcantuna.com/publication/TRO/website_OnlyRobotOverviewFigure.png" />
+  <meta property="og:description" content="Localizability-aware ICP detects weakly constrained directions and controls the registration update to keep LiDAR localization reliable in difficult geometry." /><meta property="og:image" content="https://www.turcantuna.com/publication/TRO/website_OnlyRobotOverviewFigure.png" />
   <meta property="twitter:image" content="https://www.turcantuna.com/publication/TRO/website_OnlyRobotOverviewFigure.png" /><meta property="og:locale" content="en-us" />
 
 <script type="application/ld+json">
@@ -101,7 +101,7 @@
       "name": "Marco Hutter"
     }
   ],
-  "description": "Detects localizability along optimization directions and uses that information to constrain ICP updates in geometrically uninformative environments.",
+  "description": "Localizability-aware ICP detects weakly constrained directions and controls the registration update to keep LiDAR localization reliable in difficult geometry.",
   "isPartOf": {
     "@type": "CreativeWork",
     "name": "IEEE Transactions on Robotics"
@@ -227,8 +227,8 @@
 <a href="/publication/TRO/" >
   <div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 440px;">
     <div style="position: relative">
-      <img src="/publication/TRO/website_OnlyRobotOverviewFigure.png" width="720" height="440" alt="" class="featured-image">
-      <span class="article-header-caption">X-ICP Overview, copyright IEEE.</span>
+      <img src="/publication/TRO/website_OnlyRobotOverviewFigure.png" width="720" height="440" alt="X-ICP overview showing robotic deployments and point-cloud registration in geometrically challenging environments." class="featured-image">
+      <span class="article-header-caption">X-ICP Overview, copyright IEEE. <a class="figure-source" href="https://arxiv.org/abs/2211.16335" target="_blank" rel="noopener">Source</a></span>
     </div>
   </div>
 </a>
@@ -238,8 +238,7 @@
 </div>
 <a href="/publication/TRO/"  class="summary-link">
   <div class="article-style">
-    <p> As a response to the problem of LiDAR degeneracy, this work proposes a robust localizability-aware point cloud registration framework, X-ICP, that enables
-      LiDAR-based SLAM systems to operate in featureless eXtreme environments. The proposed framework solves both the detection and mitigation of degeneracy. </p>
+    <p>Localizability-aware ICP detects weakly constrained directions and controls the registration update to keep LiDAR localization reliable in difficult geometry.</p>
   </div>
 </a>
 <div class="btn-links">
@@ -264,14 +263,13 @@
 
 <div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 440px;">
   <div style="position: relative">
-    <img src="/publication/TRO/website_OnlyRobotOverviewFigure_extraBorder.png" width="720" height="440" alt="" class="featured-image">
-    <span class="article-header-caption">X-ICP Registration, copyright IEEE.</span>
+    <img src="/publication/TRO/website_OnlyRobotOverviewFigure_extraBorder.png" width="720" height="440" alt="X-ICP: Localizability-Aware LiDAR Registration for Robust Localization in Extreme Environments — research figure" class="featured-image">
+    <span class="article-header-caption">X-ICP Registration, copyright IEEE. <a class="figure-source" href="https://arxiv.org/abs/2211.16335" target="_blank" rel="noopener">Source</a></span>
   </div>
 </div>
 
   <div class="article-container">
-    <h3>Abstract</h3>
-    <p class="pub-abstract">In this work we propose i) a robust multi-category (non-)localizability detection module, and ii) a localizability-aware constrained ICP optimization module and couples both in a unified manner. The proposed localizability detection is achieved by utilizing the correspondences between the scan and the map to analyze the alignment strength against the principal directions of the optimization as part of its multi-category LiDAR localizability analysis. In the second part, this localizability analysis is then tightly integrated into the scan-to-map point cloud registration to generate drift-free pose updates along well-constrained directions. </p>
+    <h3>Abstract summary</h3><p class="pub-abstract">X-ICP addresses the instability of point-cloud registration when the surrounding geometry provides too little information about some directions of motion. Its localizability analysis examines scan-to-map correspondences to determine how strongly the registration problem constrains each principal optimization direction. That information is used directly in a constrained ICP update, limiting or suppressing motion along directions that cannot be estimated reliably. The detection and mitigation stages therefore operate as one registration framework. Simulated and real-world experiments compare the approach with existing methods in geometrically challenging environments. The results demonstrate robust pose estimation and transferable localizability detection without adjusting parameters separately for each tested environment.</p><p class="article-metadata"><a href="https://arxiv.org/abs/2211.16335" target="_blank" rel="noopener">Read the original abstract and paper</a></p>
     <div class="row">
       <div class="col-md-1"></div>
       <div class="col-md-10">

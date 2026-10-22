@@ -173,7 +173,7 @@ def render_section(data: dict, existing_section: str) -> str:
     ))
     if not blocks:
         raise RuntimeError("Could not find existing publication card markers")
-    cards = "\n\n".join(render_entry(entry) for entry in data["entries"] if entry.get("featured"))
+    cards = "\n\n".join(render_entry(entry) for entry in sorted(data["entries"], key=lambda e: e['year'], reverse=True) if entry.get("featured"))
     section = existing_section[:blocks[0].start()] + cards + existing_section[blocks[-1].end():]
     return re.sub(r'(<h1 class="mb-0">).*?(</h1>)',
                   lambda match: match[1] + text(data["section_title"]) + match[2],
@@ -300,7 +300,8 @@ def render_search(data: dict, homepage: str) -> str:
         path = "/" + page.parent.relative_to(ROOT).as_posix() + "/"
         records.append(search_record(title, description, path, "Platform", path))
     for entry in data["entries"]:
-        records.append({"title": entry["title"], "summary": entry["summary"], "content": entry["summary"],
+        content = ' '.join(filter(None, [entry['summary'], entry.get('abstract'), entry['venue_label']]))
+        records.append({"title": entry["title"], "summary": entry["summary"], "content": content,
                         "authors": [author["name"] for author in entry["authors"]],
                         "relpermalink": entry["page_url"], "permalink": SITE_URL + entry["page_url"],
                         "section": "publication", "type": "publication", "kind": "page", "lang": "en",
@@ -367,16 +368,32 @@ def render_detail_metadata(entry: dict) -> str:
 def render_new_detail(entry: dict) -> str:
     code, label = PUBLICATION_TYPES[entry['publication_type']]
     note = '<p class="article-metadata">' + text(entry['citation_note']) + '</p>' if entry.get('citation_note') else ''
+    content = render_abstract(entry) if entry.get('abstract') else '<h3>Overview</h3><p>' + text(entry['summary']) + '</p>'
+    figure = render_figure(entry['image']) if entry.get('image') else ''
     return f'''<!-- Publication detail start -->
 <article class="pub article-container pt-3">
   <h1>{text(entry['title'])}</h1>
   {render_detail_metadata(entry)}
   <div class="btn-links mb-3">{render_buttons(entry['buttons'], small=False)}</div>
-  <div class="article-style"><h3>Overview</h3><p>{text(entry['summary'])}</p></div>
+  {figure}
+  <div class="article-style">{content}</div>
   {note}
   <p><a href="/publication/#{code}">{label}</a> · <a href="/publication/">All publications</a></p>
 </article>
 <!-- Publication detail end -->'''
+
+
+def render_figure(image: dict) -> str:
+    return f'''<figure class="publication-figure">
+  <a href="{attr(image['src'])}" target="_blank" rel="noopener" aria-label="Open full-size figure">
+    <img src="{attr(image['src'])}" width="{int(image['width'])}" height="{int(image['height'])}" alt="{attr(image['alt'])}" loading="lazy" decoding="async" style="background:#fff;width:100%;height:auto;object-fit:contain;">
+  </a>
+  <figcaption>{text(image['caption'])} <a href="{attr(image['source_url'])}" target="_blank" rel="noopener">{text(image['credit'])} · Source</a></figcaption>
+</figure>'''
+
+
+def render_abstract(entry: dict) -> str:
+    return '<h3>Abstract summary</h3><p class="pub-abstract">' + text(entry['abstract']) + '</p><p class="article-metadata"><a href="' + attr(entry['abstract_source']) + '" target="_blank" rel="noopener">Read the original abstract and paper</a></p>'
 
 
 def render_detail(entry: dict, source: str) -> str:
@@ -389,9 +406,33 @@ def render_detail(entry: dict, source: str) -> str:
         source = source[:begin] + render_detail_metadata(entry) + source[end:]
         source = re.sub(r'(<span class="article-date">).*?(</span>)',
                         lambda m: m[1] + text(entry['date']) + m[2], source, flags=re.DOTALL)
-        # Preserve paper-specific images and full abstracts on the original pages.
+        # Preserve paper-specific images and the original page structure.
         source = re.sub(r'(<span class="pub-publication">).*?(</span>)',
                         lambda m: m[1] + entry['venue_html'] + m[2], source, flags=re.DOTALL)
+        if entry.get('abstract'):
+            primary_figure = '<!-- Publication primary figure start -->\n<div class="article-container">' + render_figure(entry['image']) + '</div>\n<!-- Publication primary figure end -->'
+            primary_pattern = r'<!-- Publication primary figure start -->.*?<!-- Publication primary figure end -->'
+            if re.search(primary_pattern, source, re.DOTALL):
+                source = re.sub(primary_pattern, lambda _: primary_figure, source, flags=re.DOTALL)
+            elif not re.search(r'<img\b[^>]*\bsrc="' + re.escape(entry['image']['src']) + '"', source):
+                begin, _ = element_span(source, 'div', 'featured-image-wrapper')
+                source = source[:begin] + primary_figure + '\n\n' + source[begin:]
+            # Preserve the original detail layouts while keeping their text in sync.
+            source, count = re.subn(r'<h3>Abstract(?: summary)?</h3>\s*<p class="pub-abstract">.*?</p>(?:<p class="article-metadata"><a href="[^"]*" target="_blank" rel="noopener">Read the original abstract and paper</a></p>)?',
+                                    lambda _: render_abstract(entry), source, count=1, flags=re.DOTALL)
+            if count != 1: raise RuntimeError('Missing abstract block in ' + entry['page_url'])
+            source = re.sub(r'(<a [^>]*class="summary-link"[^>]*>\s*<div class="article-style">\s*<p>).*?(</p>)',
+                            lambda m: m[1] + text(entry['summary']) + m[2], source, count=1, flags=re.DOTALL)
+            # Existing figures remain in place; add descriptive alternative text.
+            source = re.sub(r'(<img\b[^>]*\bsrc="' + re.escape(entry['image']['src']) + r'"[^>]*\balt=")[^"]*(")',
+                            lambda m: m[1] + attr(entry['image']['alt']) + m[2], source)
+            def credit_caption(match):
+                caption = match[2].split(' <a class="figure-source"')[0]
+                link = ' <a class="figure-source" href="' + attr(entry['image']['source_url']) + '" target="_blank" rel="noopener">Source</a>'
+                return match[1] + caption + link + match[3]
+            source = re.sub(r'(<span class="article-header-caption">)(.*?)(</span>)', credit_caption, source, flags=re.DOTALL)
+            source = re.sub(r'(<img\b[^>]*\balt=")("[^>]*class="featured-image")',
+                            lambda m: m[1] + attr(entry['title'] + ' — research figure') + m[2], source)
     source, count = re.subn(r'(<div class="btn-links(?: mb-3)?">).*?(</div>)',
                            lambda match: match[1] + "\n" + render_buttons(entry["buttons"], small=False) + "\n" + match[2],
                            source, count=1, flags=re.DOTALL)

@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather&family=Roboto+Mono&display=swap" media="print" onload="this.media='all'">
 
   <meta name="author" content="Turcan Tuna" />
-  <meta name="description" content="Uses horizontal slices of LiDAR geometry, bird’s-eye-view density images and attention to recognize revisited places in forests." />
+  <meta name="description" content="Forest place recognition using attention across LiDAR density images at multiple heights to handle repetitive vegetation and changing conditions." />
   <link rel="alternate" hreflang="en-us" href="https://www.turcantuna.com/publication/forestlpr/" />
   <meta name="theme-color" content="#1565c0" />
   <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
@@ -67,8 +67,8 @@
   <meta property="og:site_name" content="Turcan Tuna" />
   <meta property="og:url" content="https://www.turcantuna.com/publication/forestlpr/" />
   <meta property="og:title" content="ForestLPR: LiDAR Place Recognition in Forests Attentioning Multiple BEV Density Images | Turcan Tuna" />
-  <meta property="og:description" content="Uses horizontal slices of LiDAR geometry, bird’s-eye-view density images and attention to recognize revisited places in forests." /><meta property="og:image" content="https://www.turcantuna.com/authors/admin/avatar.jpg" />
-  <meta property="twitter:image" content="https://www.turcantuna.com/authors/admin/avatar.jpg" /><meta property="og:locale" content="en-us" />
+  <meta property="og:description" content="Forest place recognition using attention across LiDAR density images at multiple heights to handle repetitive vegetation and changing conditions." /><meta property="og:image" content="https://www.turcantuna.com/publication/forestlpr/featured.webp" />
+  <meta property="twitter:image" content="https://www.turcantuna.com/publication/forestlpr/featured.webp" /><meta property="og:locale" content="en-us" />
 
 <script type="application/ld+json">
 {
@@ -77,7 +77,7 @@
   "mainEntityOfPage": "https://www.turcantuna.com/publication/forestlpr/",
   "headline": "ForestLPR: LiDAR Place Recognition in Forests Attentioning Multiple BEV Density Images",
   "image": [
-    "https://www.turcantuna.com/authors/admin/avatar.jpg"
+    "https://www.turcantuna.com/publication/forestlpr/featured.webp"
   ],
   "author": [
     {
@@ -101,7 +101,7 @@
       "name": "Nanning Zheng"
     }
   ],
-  "description": "Uses horizontal slices of LiDAR geometry, bird’s-eye-view density images and attention to recognize revisited places in forests.",
+  "description": "Forest place recognition using attention across LiDAR density images at multiple heights to handle repetitive vegetation and changing conditions.",
   "isPartOf": {
     "@type": "CreativeWork",
     "name": "2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
@@ -232,7 +232,13 @@
               Code
             </a>
 </div>
-  <div class="article-style"><h3>Overview</h3><p>Uses horizontal slices of LiDAR geometry, bird’s-eye-view density images and attention to recognize revisited places in forests.</p></div>
+  <figure class="publication-figure">
+  <a href="/publication/forestlpr/featured.webp" target="_blank" rel="noopener" aria-label="Open full-size figure">
+    <img src="/publication/forestlpr/featured.webp" width="1290" height="1088" alt="Forest point cloud divided into horizontal slices and colored by the attention assigned to tree and vegetation geometry." loading="lazy" decoding="async" style="background:#fff;width:100%;height:auto;object-fit:contain;">
+  </a>
+  <figcaption>Learned attention selects useful forest geometry across different heights in the LiDAR scan. <a href="https://arxiv.org/html/2503.04475v1" target="_blank" rel="noopener">Paper authors · Source</a></figcaption>
+</figure>
+  <div class="article-style"><h3>Abstract summary</h3><p class="pub-abstract">ForestLPR tackles place recognition in forests, where similar-looking trees and changing vegetation make revisited locations difficult to identify. It converts horizontal slices of a LiDAR point cloud into bird&#x27;s-eye-view density images at several heights. A shared visual-transformer backbone extracts local features, and an interaction module learns which heights provide useful information at each location. These features are aggregated into a descriptor designed to remain robust to rotation. Evaluation on public benchmarks and robotic field datasets covers both loop closure within a sequence and relocalization between sequences. The reported average Recall@1 improvements over the closest comparison method are 7.38% and 9.11% for those two settings, respectively.</p><p class="article-metadata"><a href="https://arxiv.org/abs/2503.04475" target="_blank" rel="noopener">Read the original abstract and paper</a></p></div>
 
   <p><a href="/publication/#1">Conference paper</a> · <a href="/publication/">All publications</a></p>
 </article>

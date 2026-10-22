@@ -6,10 +6,10 @@
       "id": "grandtour",
       "research_id": "grandtour",
       "title": "GrandTour: A legged robotics dataset in the wild for multi-modal perception and state estimation",
-      "summary": "Multimodal ANYmal-D field dataset combining the Boxi payload, robot proprioception and surveyed ground truth for perception and state-estimation research.",
+      "summary": "A field dataset for legged robotics, pairing synchronized multimodal sensing with precise ground truth across 49 missions and varied real-world conditions.",
       "date": "2026",
       "year": 2026,
-      "featured": false,
+      "featured": true,
       "page_url": "/publication/grandtour/",
       "publication_type": "journal",
       "status": "published",
@@ -88,16 +88,30 @@
         "https://www.research-collection.ethz.ch/entities/researchdata/3d3cf243-bd31-42ce-9af6-b61642078dbf",
         "https://doi.org/10.1177/02783649261480737",
         "https://arxiv.org/abs/2602.18164"
-      ]
+      ],
+      "abstract": "GrandTour provides a shared basis for studying perception and state estimation on legged robots outside controlled laboratory settings. Data were collected with an ANYmal-D quadruped carrying the Boxi sensor payload in environments ranging from mountain paths and forests to urban spaces and damaged buildings. The recordings combine LiDAR, complementary RGB cameras, stereo and depth sensing, inertial measurements and robot proprioception. Carefully calibrated, synchronized measurements are accompanied by reference trajectories from RTK-GNSS and a surveying total station. The diversity of terrain, lighting, weather and motion supports evaluation of localization, mapping and multimodal learning under realistic deployment conditions. The dataset and supporting tools make these experiments reproducible across different approaches to legged-robot autonomy.",
+      "abstract_source": "https://arxiv.org/abs/2602.18164",
+      "abstract_kind": "summary",
+      "image": {
+        "src": "/publication/grandtour/featured.webp",
+        "width": 2044,
+        "height": 1775,
+        "source_url": "https://arxiv.org/html/2602.18164v3",
+        "source_asset": "https://arxiv.org/html/2602.18164v3/fig_1.png",
+        "alt": "GrandTour figure showing ANYmal in varied environments, camera views and surveyed robot routes.",
+        "caption": "GrandTour deployments and sensor views across outdoor, urban and industrial environments.",
+        "credit": "Paper authors",
+        "style": "background:#fff;object-fit:contain;"
+      }
     },
     {
       "id": "trail",
       "research_id": "trail",
       "title": "TRaIL-Odom: Tightly Coupled Continuous Time Radar-IMU-LiDAR Odometry With Adaptive Doppler Weighting",
-      "summary": "Radar–IMU–LiDAR odometry adjusts individual Doppler constraints and overall radar weight according to weakly constrained LiDAR directions. Evaluated on 13 sequences.",
+      "summary": "Radar–IMU–LiDAR odometry that adjusts Doppler constraints to the directions in which LiDAR geometry provides weak localization information.",
       "date": "2026",
       "year": 2026,
-      "featured": false,
+      "featured": true,
       "page_url": "/publication/trail/",
       "publication_type": "journal",
       "status": "accepted",
@@ -165,16 +179,30 @@
         "https://snu.elsevierpure.com/en/publications/trail-odom-tightly-coupled-continuous-time-radar-imu-lidar-odomet/",
         "https://doi.org/10.1109/LRA.2026.3732906",
         "https://arxiv.org/abs/2609.03561"
-      ]
+      ],
+      "abstract": "TRaIL-Odom combines radar, inertial and LiDAR measurements in a continuous-time estimator while adapting the contribution of radar to the available geometric information. It first identifies translational directions that LiDAR constrains poorly. Individual Doppler measurements are then weighted according to how much information they provide along those directions. A second mechanism changes the overall radar influence as the geometry becomes more or less informative. This avoids assigning the same importance to radar in every scene and direction. Evaluation covers 13 sequences, including open areas and tunnels. On three degenerate sequences, the combined weighting mechanisms reduce absolute and relative trajectory errors by 86.0% and 78.5%, respectively, compared with the fixed-weight baseline.",
+      "abstract_source": "https://arxiv.org/abs/2609.03561",
+      "abstract_kind": "summary",
+      "image": {
+        "src": "/publication/trail/featured.webp",
+        "width": 623,
+        "height": 626,
+        "source_url": "https://arxiv.org/html/2609.03561v1",
+        "source_asset": "https://arxiv.org/html/2609.03561v1/Figure1.png",
+        "alt": "TRaIL-Odom trajectory comparisons with reference paths and baseline methods in an airfield and bicycle tunnel.",
+        "caption": "Trajectory comparisons in open terrain and a tunnel, where directional geometric constraints are weak.",
+        "credit": "Paper authors",
+        "style": "background:#fff;object-fit:contain;"
+      }
     },
     {
       "id": "bievr",
       "research_id": "bievr",
       "title": "BIEVR-LIO: Robust LiDAR-Inertial Odometry through Bump-Image-Enhanced Voxel Maps",
-      "summary": "LiDAR-inertial odometry uses oriented height images inside voxels and map-informed sampling to exploit small geometric variations in difficult scenes.",
+      "summary": "LiDAR odometry that captures small geometric details with oriented height images and concentrates registration on informative parts of the map.",
       "date": "2026",
       "year": 2026,
-      "featured": false,
+      "featured": true,
       "page_url": "/publication/bievr/",
       "publication_type": "conference",
       "status": "published",
@@ -243,16 +271,30 @@
         "https://www.roboticsproceedings.org/rss22/p049.html",
         "https://doi.org/10.15607/RSS.2026.XXII.049",
         "https://arxiv.org/abs/2604.14421"
-      ]
+      ],
+      "abstract": "BIEVR-LIO addresses localization failures in environments whose large surfaces offer few constraints for point-cloud alignment. Its map stores fine surface detail as oriented height images within voxels. Registration uses this representation directly, retaining information that can disappear when a surface is approximated by a plane. A map-informed sampling method assigns more measurements to regions with useful geometric variation and fewer to relatively flat regions. This focuses computation where it can improve localization. Experiments span different sensors, robotic platforms and environments, showing reliable estimation in challenging scenes where comparison methods fail. The same detailed map can also support downstream tasks, including elevation mapping for locomotion.",
+      "abstract_source": "https://arxiv.org/abs/2604.14421",
+      "abstract_kind": "summary",
+      "image": {
+        "src": "/publication/bievr/featured.webp",
+        "width": 1600,
+        "height": 1000,
+        "source_url": "https://patripfr.github.io/bievr-lio/",
+        "source_asset": "https://patripfr.github.io/bievr-lio/static/images/highlight_wide.png",
+        "alt": "BIEVR-LIO tunnel map with enlarged colored height images of wall recesses and the rail bed.",
+        "caption": "Fine surface structure in a tunnel is represented by oriented height images inside map voxels.",
+        "credit": "BIEVR-LIO project authors",
+        "style": "background:#fff;object-fit:contain;"
+      }
     },
     {
       "id": "holistic",
       "research_id": "holistic",
       "title": "Holistic Fusion: Task- and Setup-Agnostic Robot Localization and State Estimation With Factor Graphs",
-      "summary": "Factor-graph formulation jointly estimates local/global robot states and evolving reference-frame alignments so heterogeneous sensors can be fused across setups.",
+      "summary": "A general factor-graph framework for smooth local motion estimation and globally consistent localization across sensors, reference frames and robot platforms.",
       "date": "2026",
       "year": 2026,
-      "featured": false,
+      "featured": true,
       "page_url": "/publication/holistic/",
       "publication_type": "journal",
       "status": "published",
@@ -323,16 +365,30 @@
         "https://leggedrobotics.github.io/holistic_fusion/",
         "https://doi.org/10.1109/TRO.2026.3714645",
         "https://arxiv.org/abs/2504.06479"
-      ]
+      ],
+      "abstract": "Holistic Fusion provides a common state-estimation framework for robots with different sensors and operating requirements. Rather than assuming that every measurement already shares a fixed reference frame, it estimates the robot state together with the relationships between measurement frames. Absolute observations, local motion estimates and landmarks can therefore enter the same factor graph. Time-varying frame alignment is modeled within the optimization, while the estimator maintains locally smooth motion estimates for control and mapping. An asynchronous smoothing process and IMU-rate propagation support online use on robot computers. Evaluation across five real-world scenarios and three platforms demonstrates how the framework accommodates different sensor combinations while maintaining accurate global localization and continuous local motion estimates.",
+      "abstract_source": "https://arxiv.org/abs/2504.06479",
+      "abstract_kind": "summary",
+      "image": {
+        "src": "/publication/holistic/featured.webp",
+        "width": 1546,
+        "height": 470,
+        "source_url": "https://leggedrobotics.github.io/holistic_fusion/",
+        "source_asset": "https://leggedrobotics.github.io/holistic_fusion/docs_src/img/hf_illustration.png",
+        "alt": "Holistic Fusion illustration connecting a robot, reference frames, measurements and a factor graph.",
+        "caption": "Sensors and reference frames are connected through a shared factor graph for robot state estimation.",
+        "credit": "Holistic Fusion project authors",
+        "style": "background:#fff;object-fit:contain;"
+      }
     },
     {
       "id": "carli",
       "research_id": "carli",
       "title": "CaRLi-V: Camera–RADAR–LiDAR Point-Wise 3-D Velocity Estimation",
-      "summary": "Combines radar radial velocities, optical flow and LiDAR ranges to estimate point-wise three-dimensional velocity using a closed-form fusion step.",
+      "summary": "Camera, radar and LiDAR measurements are combined to estimate full 3D velocities at individual points on moving objects.",
       "date": "2026",
       "year": 2026,
-      "featured": false,
+      "featured": true,
       "page_url": "/publication/carli/",
       "publication_type": "journal",
       "status": "published",
@@ -395,7 +451,21 @@
         "https://arxiv.org/html/2511.01383v2",
         "https://doi.org/10.1109/RAP.2026.3702579",
         "https://arxiv.org/abs/2511.01383"
-      ]
+      ],
+      "abstract": "CaRLi-V estimates three-dimensional motion at individual points, including points on people and other objects that do not move as rigid bodies. Radar supplies radial velocity information, camera optical flow constrains tangential motion, and LiDAR provides the corresponding range measurements. A dense radar representation, called the velocity cube, makes Doppler information available for this fusion. The measurements are combined through a closed-form calculation to recover complete velocity vectors rather than only motion toward or away from the sensor. Tests on a dedicated dataset compare the estimates with ground truth and with existing scene-flow methods. The implementation is released as a ROS 2 package for applications such as motion-aware navigation and interaction.",
+      "abstract_source": "https://arxiv.org/abs/2511.01383",
+      "abstract_kind": "summary",
+      "image": {
+        "src": "/publication/carli/featured.webp",
+        "width": 946,
+        "height": 886,
+        "source_url": "https://arxiv.org/html/2511.01383v2",
+        "source_asset": "https://arxiv.org/html/2511.01383v2/Results_visualization.png",
+        "alt": "Four point-cloud examples with red velocity vectors showing people and independently moving limbs.",
+        "caption": "Estimated 3D velocities distinguish moving agents and the motion of individual body parts.",
+        "credit": "Paper authors",
+        "style": "background:#fff;object-fit:contain;"
+      }
     },
     {
       "id": "shuttle",
@@ -550,10 +620,10 @@
       "id": "informed",
       "research_id": "informed",
       "title": "Informed, Constrained, Aligned: A Field Analysis on Degeneracy-Aware Point Cloud Registration in the Wild",
-      "summary": "Analyzes and experimentally compares active/passive degeneracy handling, truncated SVD, inequality constraints and Tikhonov regularization for point-cloud registration.",
+      "summary": "A field comparison of degeneracy mitigation methods for ICP, examining when constraints and regularization improve LiDAR localization.",
       "date": "2025",
       "year": 2025,
-      "featured": false,
+      "featured": true,
       "page_url": "/publication/informed/",
       "publication_type": "journal",
       "status": "published",
@@ -620,16 +690,30 @@
         "https://github.com/leggedrobotics/perfectlyconstrained/blob/main/README.md",
         "https://doi.org/10.1109/TFR.2025.3576053",
         "https://arxiv.org/abs/2408.11809"
-      ]
+      ],
+      "abstract": "This study examines what happens when ICP registration encounters geometry that cannot constrain every component of robot motion. It compares methods that detect degeneracy, modify the optimization or rely on additional pose information. The analysis includes truncated singular-value decomposition, equality and inequality constraints, and linear and nonlinear regularization. A sensitivity study connects these choices to their effect on the underlying least-squares problem. Simulations and deployments in forests, tunnels and restricted passages then test their practical behavior. The results show the value of actively handling degeneracy inside the optimization when reliable external estimates are unavailable. They also show that soft constraints can perform well in difficult scenes, while their tuning remains consequential. Code and evaluation data accompany the paper.",
+      "abstract_source": "https://arxiv.org/abs/2408.11809",
+      "abstract_kind": "summary",
+      "image": {
+        "src": "/publication/informed/featured.webp",
+        "width": 1765,
+        "height": 951,
+        "source_url": "https://arxiv.org/html/2408.11809v3",
+        "source_asset": "https://arxiv.org/html/2408.11809v3/tuna1.png",
+        "alt": "Forest field experiment showing the robot trajectory, a reference bench and error maps for different ICP methods.",
+        "caption": "Forest mapping results compare how degeneracy mitigation methods preserve geometry against a reference map.",
+        "credit": "Paper authors",
+        "style": "background:#fff;object-fit:contain;"
+      }
     },
     {
       "id": "survey",
       "research_id": "survey",
       "title": "Continuous-Time State Estimation Methods in Robotics: A Survey",
-      "summary": "Unifies and reviews continuous-time estimation using splines and Gaussian processes, relating formulations, applications and open research problems.",
+      "summary": "A unified review of continuous-time estimation, connecting spline and Gaussian-process formulations with robotic applications and open research questions.",
       "date": "2025",
       "year": 2025,
-      "featured": false,
+      "featured": true,
       "page_url": "/publication/survey/",
       "publication_type": "journal",
       "status": "published",
@@ -693,16 +777,30 @@
       "source_urls": [
         "https://doi.org/10.1109/TRO.2025.3593079",
         "https://arxiv.org/abs/2411.03951"
-      ]
+      ],
+      "abstract": "Continuous-time estimation represents a robot's state as a function that can be evaluated between sensor timestamps, rather than only at a sequence of discrete states. This can simplify the handling of asynchronous measurements and support motion estimation, planning and control at arbitrary query times. The survey develops a common perspective on approaches based on splines and Gaussian processes. It organizes prior work by mathematical method, estimated quantities, application and historical development, including relevant connections to other research fields. By examining both families together, it clarifies their relationships and practical tradeoffs. The review also identifies unresolved questions and promising directions for broader use of continuous-time methods in robotics.",
+      "abstract_source": "https://arxiv.org/abs/2411.03951",
+      "abstract_kind": "summary",
+      "image": {
+        "src": "/publication/survey/featured.webp",
+        "width": 2024,
+        "height": 655,
+        "source_url": "https://arxiv.org/html/2411.03951v2",
+        "source_asset": "https://arxiv.org/html/2411.03951v2/joint_trajectory_squished_diagram.png",
+        "alt": "Side-by-side continuous-time localization diagrams showing spline control points and a Gaussian-process trajectory with uncertainty.",
+        "caption": "Spline and Gaussian-process examples illustrate continuous trajectories and their uncertainty.",
+        "credit": "Paper authors",
+        "style": "background:#fff;object-fit:contain;"
+      }
     },
     {
       "id": "boxi",
       "research_id": "boxi",
       "title": "Boxi: Design Decisions in the Context of Algorithmic Performance for Robotics",
-      "summary": "Open sensor-payload design connects synchronization, calibration, hardware layout, power and thermal choices to downstream localization and mapping performance.",
+      "summary": "An open sensor payload and design study showing how synchronization, calibration and hardware choices affect localization and mapping.",
       "date": "2025",
       "year": 2025,
-      "featured": false,
+      "featured": true,
       "page_url": "/publication/boxi/",
       "publication_type": "conference",
       "status": "published",
@@ -789,16 +887,30 @@
         "https://www.roboticsproceedings.org/rss21/p134.html",
         "https://doi.org/10.15607/RSS.2025.XXI.134",
         "https://arxiv.org/abs/2504.18500"
-      ]
+      ],
+      "abstract": "Boxi examines sensor-payload design as part of the robotics estimation problem. The system combines LiDAR, cameras with different imaging characteristics, inertial sensors and dual-antenna RTK-GNSS in one integrated package. The paper explains how sensor placement, computing, networking, power, thermal limits, synchronization and calibration influence the information available to downstream algorithms. Experiments assess the effect of these choices on state estimation and mapping in varied environments, including their cost implications. Alongside the hardware and software, the work provides a practical set of design lessons for building mobile sensing systems. Deployments across different applications demonstrate how the same payload can support field robotics beyond a single experimental setup.",
+      "abstract_source": "https://arxiv.org/abs/2504.18500",
+      "abstract_kind": "summary",
+      "image": {
+        "src": "/publication/boxi/featured.webp",
+        "width": 4183,
+        "height": 1406,
+        "source_url": "https://arxiv.org/html/2504.18500v1",
+        "source_asset": "https://arxiv.org/html/2504.18500v1/images/header.jpg",
+        "alt": "Boxi payload and a montage of field deployments on legged and wheeled robotic platforms.",
+        "caption": "Boxi sensor hardware and deployments across a range of robotic platforms and environments.",
+        "credit": "Paper authors",
+        "style": "background:#fff;object-fit:contain;"
+      }
     },
     {
       "id": "forestlpr",
       "research_id": "forestlpr",
       "title": "ForestLPR: LiDAR Place Recognition in Forests Attentioning Multiple BEV Density Images",
-      "summary": "Uses horizontal slices of LiDAR geometry, bird’s-eye-view density images and attention to recognize revisited places in forests.",
+      "summary": "Forest place recognition using attention across LiDAR density images at multiple heights to handle repetitive vegetation and changing conditions.",
       "date": "2025",
       "year": 2025,
-      "featured": false,
+      "featured": true,
       "page_url": "/publication/forestlpr/",
       "publication_type": "conference",
       "status": "published",
@@ -857,16 +969,30 @@
         "https://openaccess.thecvf.com/content/CVPR2025/html/Shen_ForestLPR_LiDAR_Place_Recognition_in_Forests_Attentioning_Multiple_BEV_Density_CVPR_2025_paper.html",
         "https://doi.org/10.1109/CVPR52734.2025.00624",
         "https://arxiv.org/abs/2503.04475"
-      ]
+      ],
+      "abstract": "ForestLPR tackles place recognition in forests, where similar-looking trees and changing vegetation make revisited locations difficult to identify. It converts horizontal slices of a LiDAR point cloud into bird's-eye-view density images at several heights. A shared visual-transformer backbone extracts local features, and an interaction module learns which heights provide useful information at each location. These features are aggregated into a descriptor designed to remain robust to rotation. Evaluation on public benchmarks and robotic field datasets covers both loop closure within a sequence and relocalization between sequences. The reported average Recall@1 improvements over the closest comparison method are 7.38% and 9.11% for those two settings, respectively.",
+      "abstract_source": "https://arxiv.org/abs/2503.04475",
+      "abstract_kind": "summary",
+      "image": {
+        "src": "/publication/forestlpr/featured.webp",
+        "width": 1290,
+        "height": 1088,
+        "source_url": "https://arxiv.org/html/2503.04475v1",
+        "source_asset": "https://arxiv.org/html/2503.04475v1/attn4.png",
+        "alt": "Forest point cloud divided into horizontal slices and colored by the attention assigned to tree and vegetation geometry.",
+        "caption": "Learned attention selects useful forest geometry across different heights in the LiDAR scan.",
+        "credit": "Paper authors",
+        "style": "background:#fff;object-fit:contain;"
+      }
     },
     {
       "id": "diffusion",
       "research_id": "diffusion",
       "title": "Diffusion Based Robust LiDAR Place Recognition",
-      "summary": "Diffusion model trained from synthetic LiDAR views of building meshes produces multiple global-position hypotheses in repetitive construction environments.",
+      "summary": "A diffusion model predicts multiple plausible LiDAR locations in buildings with repeated rooms and floors, using training scans generated from a mesh.",
       "date": "2025",
       "year": 2025,
-      "featured": false,
+      "featured": true,
       "page_url": "/publication/diffusion/",
       "publication_type": "conference",
       "status": "published",
@@ -922,16 +1048,30 @@
         "https://arxiv.org/html/2504.12412v1",
         "https://doi.org/10.1109/ICRA55743.2025.11127534",
         "https://arxiv.org/abs/2504.12412"
-      ]
+      ],
+      "abstract": "This work studies global LiDAR localization in construction environments with repeated layouts and weak geometric distinctions. Training data are generated by simulating scans inside an accurately surveyed building mesh, reducing the need to collect labeled robot trajectories on site. A diffusion model with a PointNet++ backbone learns a distribution over possible positions from a single scan. Producing multiple hypotheses allows the method to represent ambiguity when several parts of a building look alike. Evaluation on five real-world datasets measures its ability to recover location despite the gap between synthetic training scans and real measurements. The paper reports an average of 77% of predictions within two meters and roughly half the mean error of the evaluated baselines.",
+      "abstract_source": "https://arxiv.org/abs/2504.12412",
+      "abstract_kind": "summary",
+      "image": {
+        "src": "/publication/diffusion/featured.webp",
+        "width": 968,
+        "height": 668,
+        "source_url": "https://arxiv.org/abs/2504.12412",
+        "source_asset": "https://arxiv.org/pdf/2504.12412",
+        "alt": "Diagram connecting a LiDAR scan and diffusion model to multiple predicted positions in a building model.",
+        "caption": "Synthetic scans from a building mesh train a diffusion model to predict candidate robot positions.",
+        "credit": "Paper authors",
+        "style": "background:#fff;object-fit:contain;"
+      }
     },
     {
       "id": "leva",
       "research_id": "leva",
       "title": "LEVA: A High-Mobility Logistic Vehicle with Legged Suspension",
-      "summary": "Logistics robot combines steerable wheels, legged suspension and autonomous box loading for transporting payloads up to 85 kg over uneven terrain.",
+      "summary": "A logistics robot with steerable wheels, articulated legged suspension and autonomous loading for carrying heavy payloads over uneven terrain.",
       "date": "2025",
       "year": 2025,
-      "featured": false,
+      "featured": true,
       "page_url": "/publication/leva/",
       "publication_type": "conference",
       "status": "published",
@@ -1036,7 +1176,21 @@
         "https://digitalcollection.zhaw.ch/entities/publication/faa111e3-dfb5-4190-a0e2-62b105626cb1/full",
         "https://doi.org/10.1109/ICRA55743.2025.11128847",
         "https://arxiv.org/abs/2503.10028"
-      ]
+      ],
+      "abstract": "LEVA is designed to move materials through environments that are difficult for conventional wheeled logistics platforms. Its parallel-kinematic legged suspension combines the efficiency of rolling with the ability to adapt wheel positions to steps, inclines and uneven ground. A reinforcement-learning controller supports stair traversal, while a dedicated pickup mechanism enables autonomous loading of cargo boxes. The platform carries payloads of up to 85 kilograms and achieves a reported cost of transportation as low as 0.15 in the evaluated conditions. Experiments demonstrate loading, off-road driving and stair climbing. Together, these capabilities target logistics tasks in settings such as agriculture, construction and emergency response.",
+      "abstract_source": "https://arxiv.org/abs/2503.10028",
+      "abstract_kind": "summary",
+      "image": {
+        "src": "/publication/leva/featured.webp",
+        "width": 500,
+        "height": 375,
+        "source_url": "https://arxiv.org/html/2503.10028v4",
+        "source_asset": "https://arxiv.org/html/2503.10028v4/images/uneven_terrain.png",
+        "alt": "Four photographs of the LEVA logistics robot on stairs, uneven paving and grass.",
+        "caption": "LEVA's legged suspension supports cargo transport on steps, uneven ground and outdoor terrain.",
+        "credit": "Paper authors",
+        "style": "background:#fff;object-fit:contain;"
+      }
     },
     {
       "id": "TRO",
@@ -1072,12 +1226,16 @@
       "page_url": "/publication/TRO/",
       "image": {
         "src": "/publication/TRO/website_OnlyRobotOverviewFigure.png",
-        "height": 340,
-        "width": 511,
-        "alt": "X-ICP: Localizability-Aware LiDAR Registration for Robust Localization in Extreme Environments"
+        "height": 360,
+        "width": 1191,
+        "alt": "X-ICP overview showing robotic deployments and point-cloud registration in geometrically challenging environments.",
+        "source_url": "https://arxiv.org/abs/2211.16335",
+        "caption": "X-ICP evaluates geometric constraints to guide localization in challenging field deployments.",
+        "credit": "Paper authors",
+        "style": "background:#fff;object-fit:contain;"
       },
       "title": "X-ICP: Localizability-Aware LiDAR Registration for Robust Localization in Extreme Environments",
-      "summary": "Detects localizability along optimization directions and uses that information to constrain ICP updates in geometrically uninformative environments.",
+      "summary": "Localizability-aware ICP detects weakly constrained directions and controls the registration update to keep LiDAR localization reliable in difficult geometry.",
       "buttons": [
         {
           "label": "PDF",
@@ -1126,16 +1284,19 @@
         "https://sites.google.com/leggedrobotics.com/x-icp/home",
         "https://doi.org/10.1109/TRO.2023.3335691",
         "https://arxiv.org/abs/2211.16335"
-      ]
+      ],
+      "abstract": "X-ICP addresses the instability of point-cloud registration when the surrounding geometry provides too little information about some directions of motion. Its localizability analysis examines scan-to-map correspondences to determine how strongly the registration problem constrains each principal optimization direction. That information is used directly in a constrained ICP update, limiting or suppressing motion along directions that cannot be estimated reliably. The detection and mitigation stages therefore operate as one registration framework. Simulated and real-world experiments compare the approach with existing methods in geometrically challenging environments. The results demonstrate robust pose estimation and transferable localizability detection without adjusting parameters separately for each tested environment.",
+      "abstract_source": "https://arxiv.org/abs/2211.16335",
+      "abstract_kind": "summary"
     },
     {
       "id": "orchards",
       "research_id": "orchards",
       "title": "Global Path Planning for Autonomous Vehicles in Orchards and Vineyards",
-      "summary": "Global-path-planning research for autonomous operations among structured orchard and vineyard rows.",
+      "summary": "A coverage planner for orchards and vineyards that respects vehicle maneuverability while finding feasible routes within a chosen computation budget.",
       "date": "2024",
       "year": 2024,
-      "featured": false,
+      "featured": true,
       "page_url": "/publication/orchards/",
       "publication_type": "conference",
       "status": "published",
@@ -1186,22 +1347,52 @@
           "label": "Cite",
           "type": "cite",
           "filename": "/publication/orchards/cite.bib"
+        },
+        {
+          "label": "Project",
+          "href": "https://sites.google.com/leggedrobotics.com/global-orchard-vineyard",
+          "target_blank": true
+        },
+        {
+          "label": "Code",
+          "href": "https://github.com/leggedrobotics/timo_coverage_planner",
+          "target_blank": true
+        },
+        {
+          "label": "Video",
+          "href": "https://www.youtube.com/watch?v=SRWfRHVrGi8",
+          "target_blank": true
         }
       ],
       "source_urls": [
         "https://rsl.ethz.ch/the-lab/news/2024/07/congratulation-timo-schoenegg.html",
         "https://www.linkedin.com/posts/sch%C3%B6negg_i-am-very-proud-to-share-that-my-first-paper-activity-7226810558044385280-mrxJ",
-        "https://doi.org/10.1109/RoMoCo60539.2024.10604355"
-      ]
+        "https://doi.org/10.1109/RoMoCo60539.2024.10604355",
+        "https://www.research-collection.ethz.ch/entities/publication/7c1c605c-3e66-4f74-9974-5633d430047e"
+      ],
+      "abstract": "Agricultural coverage requires a vehicle to visit selected rows while negotiating obstacles and limited turning space. This work builds a global planning framework that accounts for both the structure of a field and the vehicle's kinematic constraints. A volumetric map is converted into a navigation graph, and the required coverage is expressed as a graph-routing problem. A hierarchical A* stage then turns the high-level route into feasible paths while working within a user-specified computation budget. Experiments use simulated and real-world environments with different vehicle configurations to examine route quality and feasibility. Further evaluations in a forest and a search-and-rescue training site demonstrate that the approach can extend beyond agricultural rows.",
+      "abstract_source": "https://www.research-collection.ethz.ch/entities/publication/7c1c605c-3e66-4f74-9974-5633d430047e",
+      "abstract_kind": "summary",
+      "image": {
+        "src": "/publication/orchards/featured.webp",
+        "width": 1280,
+        "height": 234,
+        "source_url": "https://sites.google.com/leggedrobotics.com/global-orchard-vineyard",
+        "source_asset": "https://sites.google.com/sitesv-images-rt/AMxu72v_MMeEK8be8glhoFjwm-oXtYJXjAkzwAYIcO9QuIo5KaM4LxBMcXdrOz-vJ0BRwAhjXDUnMSaeXa7Ilp4Et2JRJoWbzYYX1RBDn5Dwtwf5vfaFFnZJ0KuMdvKy5nUGcQtNDupf_O2g2MBORbCanDaaau6rn1OB_FiE5cc0txkbIX0l1A2BHITFQJWQsSYoaB6GBGkvBB_96RC67h4lLaTSWGDi9CwRJ1F-pzNwPdA=w1280",
+        "alt": "Global mission planning diagram with map creation, graph extraction, mission selection and hierarchical A-star path planning.",
+        "caption": "The planning pipeline connects a 3D map and vehicle constraints to a feasible coverage route.",
+        "credit": "Project authors",
+        "style": "background:#fff;object-fit:contain;"
+      }
     },
     {
       "id": "forest_inventory",
       "research_id": "forest_inventory",
       "title": "Autonomous Forest Inventory with Legged Robots: System Design and Field Deployment",
-      "summary": "Integrates state estimation, navigation and tree measurement on a legged robot. A Forest of Dean deployment surveyed 0.96 ha in 20 minutes and identified over 100 trees.",
+      "summary": "An integrated legged-robot system for autonomous forest surveying, combining navigation with online tree detection and measurement.",
       "date": "2024",
       "year": 2024,
-      "featured": false,
+      "featured": true,
       "page_url": "/publication/forest-inventory/",
       "publication_type": "workshop",
       "status": "published",
@@ -1264,7 +1455,21 @@
       ],
       "source_urls": [
         "https://arxiv.org/abs/2404.14157"
-      ]
+      ],
+      "abstract": "This workshop contribution presents an end-to-end system for forest inventory using a legged robot. State estimation, navigation and mission planning guide the robot through a survey area while online processing segments trees and estimates their properties. Legged locomotion offers a useful combination of mobility, endurance and limited soil disturbance in forest terrain. The paper reports preliminary results from three field campaigns in Finland and the United Kingdom and discusses practical lessons from deployment. In the Forest of Dean experiment, an ANYmal D surveyed 0.96 hectares autonomously in 20 minutes, identified more than 100 trees and achieved typical trunk-diameter accuracy of about two centimeters. These results describe an initial field demonstration of the integrated system.",
+      "abstract_source": "https://arxiv.org/abs/2404.14157",
+      "abstract_kind": "summary",
+      "image": {
+        "src": "/publication/forest-inventory/featured.webp",
+        "width": 1170,
+        "height": 694,
+        "source_url": "https://arxiv.org/html/2404.14157v1",
+        "source_asset": "https://arxiv.org/html/2404.14157v1/figures/depiction.png",
+        "alt": "Forest inventory illustration showing an autonomous route, point-cloud map and estimated tree trunk diameters.",
+        "caption": "Forest navigation, state estimation and online tree measurements run together on the legged platform.",
+        "credit": "Paper authors",
+        "style": "background:#fff;object-fit:contain;"
+      }
     },
     {
       "id": "SciRo",
@@ -1330,13 +1535,16 @@
       "page_url": "/publication/sciRo/",
       "image": {
         "src": "/publication/sciRo/featured.webp",
-        "height": 340,
-        "width": 511,
-        "style": "border:2px solid black",
-        "alt": "Scientific Exploration of Challenging Planetary Analog Environments with a Team of Legged Robots"
+        "height": 1043,
+        "width": 1910,
+        "style": "background:#fff;object-fit:contain;",
+        "alt": "Robotic exploration overview showing legged platforms and mapping results from planetary analog missions.",
+        "source_url": "https://arxiv.org/abs/2307.10079",
+        "caption": "Legged robots and complementary scientific payloads support exploration of difficult planetary analog terrain.",
+        "credit": "Paper authors"
       },
       "title": "Scientific exploration of challenging planetary analog environments with a team of legged robots",
-      "summary": "A team of legged robots combines locomotion, mapping, target perception and scientific instruments for exploration of difficult planetary-analog terrain.",
+      "summary": "A team of legged robots combines terrain traversal, mapping and complementary scientific instruments for exploration in planetary analog environments.",
       "buttons": [
         {
           "label": "PDF",
@@ -1374,7 +1582,10 @@
       "source_urls": [
         "https://doi.org/10.1126/scirobotics.ade9548",
         "https://arxiv.org/abs/2307.10079"
-      ]
+      ],
+      "abstract": "This work investigates how a team of legged robots can explore terrain that limits conventional planetary rovers. The robots share core mobility and perception capabilities while carrying complementary scientific payloads; one platform also uses an arm for precise measurements. Locomotion, mapping, target identification and task-level autonomy are integrated into a coordinated exploration system. The team is evaluated at an ExoMars rover testbed, a Swiss quarry and the Space Resources Challenge in Luxembourg. Deployments include loose ground, unstructured terrain and steep granular slopes. The experiments demonstrate how specialization and redundancy can support efficient scientific missions while extending access to difficult sites. Online maps and post-mission reconstructions help operators interpret the collected observations.",
+      "abstract_source": "https://arxiv.org/abs/2307.10079",
+      "abstract_kind": "summary"
     },
     {
       "id": "2022",
@@ -1400,13 +1611,16 @@
       "page_url": "/publication/deepLearningJournal/",
       "image": {
         "src": "/publication/deepLearningJournal/featured.webp",
-        "height": 340,
-        "width": 511,
-        "style": "border:2px solid black",
-        "alt": "Deep learning frameworks to learn prediction and simulation focused control system models"
+        "height": 441,
+        "width": 977,
+        "style": "background:#fff;object-fit:contain;",
+        "alt": "Neural-network diagram showing encoder, compact latent representation and decoder layers.",
+        "source_url": "https://doi.org/10.1007/s10489-021-02416-0",
+        "caption": "Autoencoder structure used to learn compact representations for nonlinear dynamical models.",
+        "credit": "Paper authors"
       },
       "title": "Deep learning frameworks to learn prediction and simulation focused control system models",
-      "summary": "Studies prediction-focused and simulation-focused deep models for nonlinear system identification, including autoencoder and recurrent-network designs.",
+      "summary": "Autoencoder and LSTM architectures for learning compact nonlinear models that support both time-series prediction and free-running simulation.",
       "buttons": [
         {
           "label": "Paper",
@@ -1439,7 +1653,10 @@
       "source_urls": [
         "https://research.itu.edu.tr/tr/publications/correction-to-deep-learning-frameworks-to-learn-prediction-and-si/",
         "https://doi.org/10.1007/s10489-021-02416-0"
-      ]
+      ],
+      "abstract": "The paper develops deep-learning frameworks for time-series forecasting and nonlinear system identification. Autoencoders learn compact representations, while long short-term memory networks capture temporal behavior. These components are organized into prediction-focused and simulation-focused models, reflecting the different requirements of estimating the next observation and generating an evolving system trajectory. The work explains how to construct and train the architectures and gives practical guidance on combining their components. Benchmark problems and real-world datasets are used to compare the proposed models with conventional, shallow and other deep neural networks. The experiments show that useful modeling accuracy can be retained with a low-dimensional feature representation, supporting compact learned descriptions of nonlinear dynamics.",
+      "abstract_source": "https://doi.org/10.1007/s10489-021-02416-0",
+      "abstract_kind": "summary"
     },
     {
       "id": "1",
@@ -1470,13 +1687,16 @@
       "page_url": "/publication/follyJournal/",
       "image": {
         "src": "/publication/follyJournal/featured.webp",
-        "height": 340,
-        "width": 511,
-        "style": "border:2px solid black",
-        "alt": "Design and development of FOLLY: A self-foldable and self-deployable quadcopter"
+        "height": 669,
+        "width": 1255,
+        "style": "background:#fff;object-fit:contain;",
+        "alt": "FOLLY quadcopter shown in folded and deployed configurations with its mechanical arm linkage.",
+        "source_url": "https://doi.org/10.1016/j.ast.2020.105807",
+        "caption": "FOLLY's compact and deployed configurations demonstrate its onboard arm-folding mechanism.",
+        "credit": "Paper authors"
       },
       "title": "Design and development of FOLLY: A self-foldable and self-deployable quadcopter",
-      "summary": "Develops the mechanics and design of a quadcopter that folds and deploys its arms automatically, extending the earlier FOLLY conference work.",
+      "summary": "A detailed design and experimental study of a quadcopter that folds and deploys its arms using one onboard actuator.",
       "buttons": [
         {
           "label": "Paper",
@@ -1514,7 +1734,10 @@
       "source_urls": [
         "https://haberler.itu.edu.tr/en/newsdetail/2022/01/12/6-patent-awards-for-inventions-from-itu",
         "https://doi.org/10.1016/j.ast.2020.105807"
-      ]
+      ],
+      "abstract": "The journal study develops FOLLY's self-folding mechanism as a means of making quadcopters easier to transport and integrate into autonomous systems. A single servo drives a four-bar crank-rocker linkage coupled through gears, coordinating the movement of the arms. The paper analyzes the mechanism's position, velocity, acceleration and torque requirements and compares numerical results with dynamic simulation. It also examines frame-material choices and flight operation. Experiments evaluate folding, deployment, hovering, battery behavior and object-tracking control. The prototype completes an arm transition in approximately 0.6 seconds. The study extends the earlier conference design with a more detailed mechanical analysis and experimental assessment of the complete aerial platform.",
+      "abstract_source": "https://doi.org/10.1016/j.ast.2020.105807",
+      "abstract_kind": "summary"
     },
     {
       "id": "2",
@@ -1545,12 +1768,16 @@
       "page_url": "/publication/follyConference/",
       "image": {
         "src": "/publication/follyConference/featured.webp",
-        "height": 340,
-        "width": 511,
-        "alt": "FOLLY: A Self Foldable and Self Deployable Autonomous Quadcopter"
+        "height": 1020,
+        "width": 1535,
+        "alt": "Original FOLLY prototype illustrating its folding arms and deployed quadcopter configuration.",
+        "source_url": "https://doi.org/10.1109/CEIT.2018.8751883",
+        "caption": "The original FOLLY prototype transitions between a compact configuration and a flight-ready frame.",
+        "credit": "Paper authors",
+        "style": "background:#fff;object-fit:contain;"
       },
       "title": "FOLLY: A Self Foldable and Self Deployable Autonomous Quadcopter",
-      "summary": "Introduces a self-folding, self-deploying quadcopter using a crank-slider mechanism and gearing for compact transport and autonomous deployment.",
+      "summary": "The original FOLLY prototype introduces automatic arm folding and deployment to improve quadcopter portability and autonomy.",
       "buttons": [
         {
           "label": "Paper",
@@ -1588,7 +1815,10 @@
       "source_urls": [
         "https://kontrol.itu.edu.tr/haberdetay/2018/11/12/kontrol-ve-otomasyon-muhendisligi-bolumu-muze-en-i-yi-bildiri-odullu",
         "https://doi.org/10.1109/CEIT.2018.8751883"
-      ]
+      ],
+      "abstract": "The conference paper introduces FOLLY as a quadcopter whose arms can fold and deploy without manual handling. The design targets the transport and deployment limitations of fixed-frame aircraft and manually folded platforms. An onboard mechanism coordinates the arm motion through mechanical linkages and spur gears, allowing the vehicle to move between compact and flight-ready configurations. The prototype completes the transition in approximately 0.6 seconds. Real-world experiments demonstrate the operation of the mechanism and the feasibility of the aircraft concept. This initial contribution establishes the self-managed arm design that is examined in greater mechanical and experimental detail in the later Aerospace Science and Technology journal article.",
+      "abstract_source": "https://doi.org/10.1109/CEIT.2018.8751883",
+      "abstract_kind": "summary"
     },
     {
       "id": "deep_erratum",

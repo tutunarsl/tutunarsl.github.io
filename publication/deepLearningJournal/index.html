@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather&family=Roboto+Mono&display=swap" media="print" onload="this.media='all'">
 
   <meta name="author" content="Turcan Tuna" />
-  <meta name="description" content="Studies prediction-focused and simulation-focused deep models for nonlinear system identification, including autoencoder and recurrent-network designs." />
+  <meta name="description" content="Autoencoder and LSTM architectures for learning compact nonlinear models that support both time-series prediction and free-running simulation." />
   <link rel="alternate" hreflang="en-us" href="https://www.turcantuna.com/publication/deepLearningJournal/" />
   <meta name="theme-color" content="#1565c0" />
   <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
@@ -67,7 +67,7 @@
   <meta property="og:site_name" content="Turcan Tuna" />
   <meta property="og:url" content="https://www.turcantuna.com/publication/deepLearningJournal/" />
   <meta property="og:title" content="Deep learning frameworks to learn prediction and simulation focused control system models | Turcan Tuna" />
-  <meta property="og:description" content="Studies prediction-focused and simulation-focused deep models for nonlinear system identification, including autoencoder and recurrent-network designs." /><meta property="og:image" content="https://www.turcantuna.com/publication/deepLearningJournal/featured.webp" />
+  <meta property="og:description" content="Autoencoder and LSTM architectures for learning compact nonlinear models that support both time-series prediction and free-running simulation." /><meta property="og:image" content="https://www.turcantuna.com/publication/deepLearningJournal/featured.webp" />
   <meta property="twitter:image" content="https://www.turcantuna.com/publication/deepLearningJournal/featured.webp" /><meta property="og:locale" content="en-us" />
 
 <script type="application/ld+json">
@@ -93,7 +93,7 @@
       "name": "Tufan Kumbasar"
     }
   ],
-  "description": "Studies prediction-focused and simulation-focused deep models for nonlinear system identification, including autoencoder and recurrent-network designs.",
+  "description": "Autoencoder and LSTM architectures for learning compact nonlinear models that support both time-series prediction and free-running simulation.",
   "isPartOf": {
     "@type": "CreativeWork",
     "name": "Applied Intelligence"
@@ -229,22 +229,13 @@ and simulation focused control system models</h1>
 
 <div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 440px;">
   <div style="position: relative">
-    <img src="/publication/deepLearningJournal/featured.webp" width="720" height="440" alt="" class="featured-image">
-    <span class="article-header-caption">Autoencoder Structure</span>
+    <img src="/publication/deepLearningJournal/featured.webp" width="720" height="440" alt="Neural-network diagram showing encoder, compact latent representation and decoder layers." class="featured-image">
+    <span class="article-header-caption">Autoencoder Structure <a class="figure-source" href="https://doi.org/10.1007/s10489-021-02416-0" target="_blank" rel="noopener">Source</a></span>
   </div>
 </div>
 
   <div class="article-container">
-    <h3>Abstract</h3>
-    <p class="pub-abstract"> In this paper, we present DL frameworks that are developed to provide novel approaches as
-      solutions to the non-linear system identification and time series prediction problems. The proposed DL frameworks leverage the advantages of autoencoders
-      and long-short term memory network, which are known being data compression and recurrent structures, respectively, to design
-      Deep Neural Networks (DNN) for modeling time series and nonlinear systems with high performance. We provide recommen-
-      dations on how deep AEs and LSTMs should be utilized to end up with efficient Prediction-focused (Pf) and Simulation-focused
-      (Sf) DNNs for time series and system identification problems. We present systematic learning methods for the DL frameworks
-      that allow straightforward learning of Pf-DNN and Sf-DNN models in detail. To demonstrate the efficiency of the developed
-      DNNs, we present various comparative results conducted on the benchmark and real-world datasets in comparison with their
-      conventional, shallow, and deep neural network counterparts</p>
+    <h3>Abstract summary</h3><p class="pub-abstract">The paper develops deep-learning frameworks for time-series forecasting and nonlinear system identification. Autoencoders learn compact representations, while long short-term memory networks capture temporal behavior. These components are organized into prediction-focused and simulation-focused models, reflecting the different requirements of estimating the next observation and generating an evolving system trajectory. The work explains how to construct and train the architectures and gives practical guidance on combining their components. Benchmark problems and real-world datasets are used to compare the proposed models with conventional, shallow and other deep neural networks. The experiments show that useful modeling accuracy can be retained with a low-dimensional feature representation, supporting compact learned descriptions of nonlinear dynamics.</p><p class="article-metadata"><a href="https://doi.org/10.1007/s10489-021-02416-0" target="_blank" rel="noopener">Read the original abstract and paper</a></p>
     <div class="row">
       <div class="col-md-1"></div>
       <div class="col-md-10">

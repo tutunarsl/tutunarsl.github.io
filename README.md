@@ -17,7 +17,7 @@ Open <http://localhost:8080>. No package installation or site build is required.
 ## Edit
 
 - Homepage text and layout: `index.html`.
-- Complete publication catalog: `data/featured_publications.json`. See [the publication guide](scripts/FEATURED_PUBLICATIONS.md); `featured` selects homepage cards.
+- Complete publication catalog, abstract summaries and credited figures: `data/featured_publications.json`. See [the publication guide](scripts/FEATURED_PUBLICATIONS.md); `featured` selects homepage cards.
 - Generated publication pages and BibTeX: `publication/<name>/`; new pages use `templates/publication.html`.
 - CV source: `uploads/resume.tex`; downloadable CV and historical project portfolio: `uploads/`.
 - Domain configuration: `CNAME`.

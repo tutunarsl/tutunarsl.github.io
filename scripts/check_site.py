@@ -24,6 +24,7 @@ class Page(HTMLParser):
         self.references = []
         self.canonical = []
         self.images_without_alt = []
+        self.images = []
         self.filter_fragments = set()
         self.json_blocks = []
         self.current_json = None
@@ -45,6 +46,8 @@ class Page(HTMLParser):
             self.canonical.append(attrs.get('href', ''))
         if tag == 'img' and 'alt' not in attrs:
             self.images_without_alt.append(line)
+        if tag == 'img':
+            self.images.append(attrs.get('src', ''))
         if tag == 'option' and attrs.get('value', '').startswith('.pubtype-'):
             self.filter_fragments.add(attrs['value'][len('.pubtype-'):])
         if tag == 'script' and attrs.get('type') in ('application/json', 'application/ld+json'):
@@ -128,6 +131,15 @@ def main():
         errors.append('Search must contain each publication exactly once')
     for entry in catalog:
         names = [a['name'] for a in entry['authors']]
+        is_research_paper = entry['status'] in ('published', 'accepted') and entry['publication_type'] != 'correction'
+        if entry.get('featured') and not is_research_paper:
+            errors.append(entry['id'] + ': featured entries must be published or accepted research papers')
+        if is_research_paper:
+            if not entry.get('abstract') or entry.get('abstract_kind') != 'summary' or not entry.get('abstract_source'):
+                errors.append(entry['id'] + ': missing sourced abstract summary')
+            figure = entry.get('image', {})
+            if not all(figure.get(key) for key in ('src', 'alt', 'width', 'height', 'caption', 'credit', 'source_url')):
+                errors.append(entry['id'] + ': missing figure or attribution')
         shared = set(entry.get('equal_contributors', []))
         shown = [a['name'] for a in display_authors(entry)]
         if not shared.issubset(names) or len(names) != len(set(names)):
@@ -140,6 +152,12 @@ def main():
         if page not in pages:
             errors.append(entry['id'] + ': missing detail page')
             continue
+        if is_research_paper:
+            content = page.read_text(encoding='utf-8')
+            if 'class="pub-abstract"' not in content or entry['abstract_source'] not in content:
+                errors.append(entry['id'] + ': detail page is missing its abstract or source')
+            if entry.get('image', {}).get('src') not in pages[page].images:
+                errors.append(entry['id'] + ': detail page is missing its primary figure')
         article = next((json.loads(block) for _, block in pages[page].json_blocks
                         if json.loads(block).get('@type') == 'ScholarlyArticle'), {})
         if [author['name'] for author in article.get('author', [])] != names:
